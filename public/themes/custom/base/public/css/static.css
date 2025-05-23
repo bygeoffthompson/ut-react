@@ -9618,8 +9618,23 @@ body > img {
 .byline {
     font-size: 20px;
 }
+.search-result {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    justify-content: start;
+}
+.search-result:hover .search-text {
+    opacity: 1;
+}
+.search-text {
+    opacity: .34;
+}
 #block-our-content h2 {
     margin: 0;
+}
+#block-our-content ul {
+    list-style-type: none;
 }
 #block-our-content .body-text {
     align-items: center;

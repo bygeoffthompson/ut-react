@@ -8,7 +8,8 @@ function App() {
   useEffect(() => {
       if (searchTerm) {
           const results = data.filter(item =>
-              item.title.toLowerCase().includes(searchTerm.toLowerCase())
+              item.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+              item.text.toLowerCase().includes(searchTerm.toLowerCase())
           );
           setSearchResults(results);
       } else {
@@ -23,7 +24,7 @@ function App() {
   return (
       <div>
           <div className="body-text">
-              <h2 className="heading">Search</h2>
+              <h2 className="heading">Search<span className="d-none"> our Content</span></h2>
               <input
                   type="text"
                   placeholder="Our Content"
@@ -31,13 +32,14 @@ function App() {
                   onChange={handleChange}
               />
           </div>
-          <ul>
+          <div>
               {searchResults.map(item => (
-                  <li key={item.id}>
+                  <div className="search-result" key={item.id}>
                       <a href={item.href}>{item.title}</a>
-                  </li>
+                      <span className="search-text">{item.text}</span>
+                  </div>
               ))}
-          </ul>
+          </div>
       </div>
   );
 }

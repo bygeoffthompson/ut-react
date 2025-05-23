@@ -2,121 +2,146 @@
   {
     "id": 1,
     "title": "About",
-    "href": "/about.html"
+    "href": "/about.html",
+    "text": "Learn more about Unleashed Technologies"
   },
   {
     "id": 2,
     "title": "Blog",
-    "href": "/blog.html"
+    "href": "/blog.html",
+    "text": ""
+
   },
   {
     "id": 3,
     "title": "Careers",
-    "href": "/careers.html"
+    "href": "/careers.html",
+    "text": ""
   },
   {
     "id": 4,
     "title": "Contact Us",
-    "href": "/contact-us.html"
+    "href": "/contact-us.html",
+    "text": ""
   },
   {
     "id": 5,
     "title": "Industries",
-    "href": "/industries.html"
+    "href": "/industries.html",
+    "text": ""
   },
   {
     "id": 6,
     "title": "Insights",
-    "href": "/insights.html"
+    "href": "/insights.html",
+    "text": ""
   },
   {
     "id": 7,
     "title": "Services",
-    "href": "/services.html"
+    "href": "/services.html",
+    "text": ""
   },
   {
     "id": 8,
     "title": "Start a Project",
-    "href": "/start-project.html"
+    "href": "/start-project.html",
+    "text": ""
   },
   {
     "id": 9,
     "title": "Work",
-    "href": "/work.html"
+    "href": "/work.html",
+    "text": ""
   },
   {
     "id": 10,
     "title": "Leadership",
-    "href": "/about/leadership.html"
+    "href": "/about/leadership.html",
+    "text": ""
   },
   {
     "id": 11,
     "title": "Muhammad Hutasuhut",
-    "href": "/about/leadership/muhammad-hutasuhut.html"
+    "href": "/about/leadership/muhammad-hutasuhut.html",
+    "text": ""
   },
   {
     "id": 12,
     "title": "Custom Application Development",
-    "href": "/services/custom-application-development.html"
+    "href": "/services/custom-application-development.html",
+    "text": ""
   },
   {
     "id": 13,
     "title": "Design User Experience",
-    "href": "/services/design-user-experience.html"
+    "href": "/services/design-user-experience.html",
+    "text": ""
   },
   {
     "id": 14,
     "title": "DevOps Hosting",
-    "href": "/services/devops-hosting.html"
+    "href": "/services/devops-hosting.html",
+    "text": ""
   },
   {
     "id": 15,
     "title": "eCommerce Website Development",
-    "href": "/services/eCommerce-website-development.html"
+    "href": "/services/eCommerce-website-development.html",
+    "text": ""
   },
   {
     "id": 16,
     "title": "Evolving Services",
-    "href": "/services/evolving-services.html"
+    "href": "/services/evolving-services.html",
+    "text": ""
   },
   {
     "id": 17,
     "title": "Long Term Partnership",
-    "href": "/services/long-term-partnership.html"
+    "href": "/services/long-term-partnership.html",
+    "text": ""
   },
   {
     "id": 18,
     "title": "Strategy Optimization",
-    "href": "/services/strategy-optimization.html"
+    "href": "/services/strategy-optimization.html",
+    "text": ""
   },
   {
     "id": 19,
     "title": "Technology and Website Development",
-    "href": "/services/technology-website-development.html"
+    "href": "/services/technology-website-development.html",
+    "text": ""
   },
   {
     "id": 20,
     "title": "Website Development Services",
-    "href": "/services/website-development-services.html"
+    "href": "/services/website-development-services.html",
+    "text": ""
   },
   {
     "id": 21,
     "title": "American Medical and Informatics Association",
-    "href": "/work/amia-american-medical-and-informatics-association.html"
+    "href": "/work/amia-american-medical-and-informatics-association.html",
+    "text": ""
   },
   {
     "id": 22,
     "title": "Barnard College",
-    "href": "/work/barnard-college.html"
+    "href": "/work/barnard-college.html",
+    "text": ""
   },
   {
     "id": 23,
     "title": "BSN Sports",
-    "href": "/work/bsn-sports.html"
+    "href": "/work/bsn-sports.html",
+    "text": ""
   },
   {
     "id": 24,
     "title": "GEAPS",
-    "href": "/work/geaps.html"
+    "href": "/work/geaps.html",
+    "text": ""
   }
 ]
