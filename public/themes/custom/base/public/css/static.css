@@ -9621,14 +9621,23 @@ body > img {
 .search-result {
     align-items: center;
     display: flex;
+    font-size: 18px;
     gap: 1rem;
     justify-content: start;
+    margin-bottom: .5rem;
+}
+.search-result a {
+    transition: all .25s ease-in;
+}
+.search-result:hover > a {
+    font-size: 28px;
 }
 .search-result:hover .search-text {
     opacity: 1;
 }
 .search-text {
-    opacity: .34;
+    font-style: italic;
+    opacity: .25;
 }
 #block-our-content h2 {
     margin: 0;

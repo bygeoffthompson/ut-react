@@ -9,8 +9,9 @@ function App() {
       if (searchTerm) {
           const results = data.filter(item =>
               item.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+              item.tags.toLowerCase().includes(searchTerm.toLowerCase()) ||
               item.text.toLowerCase().includes(searchTerm.toLowerCase())
-          );
+          ).slice(0,10);
           setSearchResults(results);
       } else {
           setSearchResults([]);

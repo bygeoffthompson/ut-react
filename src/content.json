@@ -3,145 +3,168 @@
     "id": 1,
     "title": "About",
     "href": "/about.html",
-    "text": "Learn more about Unleashed Technologies"
+    "text": "Who we are and where we're from",
+    "tags": "history"
   },
   {
     "id": 2,
     "title": "Blog",
     "href": "/blog.html",
-    "text": ""
-
+    "text": "Our best ideas and thoughts are published on our Blog",
+    "tags": "articles"
   },
   {
     "id": 3,
     "title": "Careers",
     "href": "/careers.html",
-    "text": ""
+    "text": "Our Careers page is always up-to-date with the latest employment information",
+    "tags": "jobs"
   },
   {
     "id": 4,
     "title": "Contact Us",
     "href": "/contact-us.html",
-    "text": ""
+    "text": "Get in touch with us in a variety of ways",
+    "tags": ""
   },
   {
     "id": 5,
     "title": "Industries",
     "href": "/industries.html",
-    "text": ""
+    "text": "Learn about the Industries we service",
+    "tags": ""
   },
   {
     "id": 6,
     "title": "Insights",
     "href": "/insights.html",
-    "text": ""
+    "text": "Read our most recent Insights",
+    "tags": ""
   },
   {
     "id": 7,
     "title": "Services",
     "href": "/services.html",
-    "text": ""
+    "text": "Learn about the services we offer",
+    "tags": ""
   },
   {
     "id": 8,
     "title": "Start a Project",
     "href": "/start-project.html",
-    "text": ""
+    "text": "Start a project with us",
+    "tags": ""
   },
   {
     "id": 9,
     "title": "Work",
     "href": "/work.html",
-    "text": ""
+    "text": "Learn about who we work with",
+    "tags": ""
   },
   {
     "id": 10,
     "title": "Leadership",
     "href": "/about/leadership.html",
-    "text": ""
+    "text": "See our Leadership Team",
+    "tags": ""
   },
   {
     "id": 11,
     "title": "Muhammad Hutasuhut",
     "href": "/about/leadership/muhammad-hutasuhut.html",
-    "text": ""
+    "text": "Chief Executive Officer",
+    "tags": "CEO"
   },
   {
     "id": 12,
     "title": "Custom Application Development",
     "href": "/services/custom-application-development.html",
-    "text": ""
+    "text": "Read about our experience building custom applications",
+    "tags": ""
   },
   {
     "id": 13,
     "title": "Design User Experience",
     "href": "/services/design-user-experience.html",
-    "text": ""
+    "text": "Learn how design impacts the user experience",
+    "tags": ""
   },
   {
     "id": 14,
     "title": "DevOps Hosting",
     "href": "/services/devops-hosting.html",
-    "text": ""
+    "text": "Development and operation hosting",
+    "tags": ""
   },
   {
     "id": 15,
     "title": "eCommerce Website Development",
     "href": "/services/eCommerce-website-development.html",
-    "text": ""
+    "text": "Custom eCommerce development works for our clients",
+    "tags": ""
   },
   {
     "id": 16,
     "title": "Evolving Services",
     "href": "/services/evolving-services.html",
-    "text": ""
+    "text": "A constant story of adaptation",
+    "tags": ""
   },
   {
     "id": 17,
     "title": "Long Term Partnership",
     "href": "/services/long-term-partnership.html",
-    "text": ""
+    "text": "Read about our long term partnerships",
+    "tags": ""
   },
   {
     "id": 18,
     "title": "Strategy Optimization",
     "href": "/services/strategy-optimization.html",
-    "text": ""
+    "text": "Web technologies needs to be optimized for best results",
+    "tags": ""
   },
   {
     "id": 19,
     "title": "Technology and Website Development",
     "href": "/services/technology-website-development.html",
-    "text": ""
+    "text": "We build websites and web applications to augment your staff",
+    "tags": "Drupal, React, Symfony, Wordpress"
   },
   {
     "id": 20,
     "title": "Website Development Services",
     "href": "/services/website-development-services.html",
-    "text": ""
+    "text": "We can build from square one or inherit projects that need TLC",
+    "tags": "Drupal, React, Symfony, Wordpress"
   },
   {
     "id": 21,
     "title": "American Medical and Informatics Association",
     "href": "/work/amia-american-medical-and-informatics-association.html",
-    "text": ""
+    "text": "Read about how we work with AMIA",
+    "tags": "Drupal web development"
   },
   {
     "id": 22,
     "title": "Barnard College",
     "href": "/work/barnard-college.html",
-    "text": ""
+    "text": "Read about how we work with Barnard College",
+    "tags": "Drupal web development"
   },
   {
     "id": 23,
     "title": "BSN Sports",
     "href": "/work/bsn-sports.html",
-    "text": ""
+    "text": "Read about how we work with BSN Sports",
+    "tags": "Symfony web development"
   },
   {
     "id": 24,
     "title": "GEAPS",
     "href": "/work/geaps.html",
-    "text": ""
+    "text": "Read about how we work with GEAPS",
+    "tags": "Wordpress web development"
   }
 ]
