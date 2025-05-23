@@ -43,5 +43,80 @@
     "id": 9,
     "title": "Work",
     "href": "/work.html"
+  },
+  {
+    "id": 10,
+    "title": "Leadership",
+    "href": "/about/leadership.html"
+  },
+  {
+    "id": 11,
+    "title": "Muhammad Hutasuhut",
+    "href": "/about/leadership/muhammad-hutasuhut.html"
+  },
+  {
+    "id": 12,
+    "title": "Custom Application Development",
+    "href": "/services/custom-application-development.html"
+  },
+  {
+    "id": 13,
+    "title": "Design User Experience",
+    "href": "/services/design-user-experience.html"
+  },
+  {
+    "id": 14,
+    "title": "DevOps Hosting",
+    "href": "/services/devops-hosting.html"
+  },
+  {
+    "id": 15,
+    "title": "eCommerce Website Development",
+    "href": "/services/eCommerce-website-development.html"
+  },
+  {
+    "id": 16,
+    "title": "Evolving Services",
+    "href": "/services/evolving-services.html"
+  },
+  {
+    "id": 17,
+    "title": "Long Term Partnership",
+    "href": "/services/long-term-partnership.html"
+  },
+  {
+    "id": 18,
+    "title": "Strategy Optimization",
+    "href": "/services/strategy-optimization.html"
+  },
+  {
+    "id": 19,
+    "title": "Technology and Website Development",
+    "href": "/services/technology-website-development.html"
+  },
+  {
+    "id": 20,
+    "title": "Website Development Services",
+    "href": "/services/website-development-services.html"
+  },
+  {
+    "id": 21,
+    "title": "American Medical and Informatics Association",
+    "href": "/work/amia-american-medical-and-informatics-association.html"
+  },
+  {
+    "id": 22,
+    "title": "Barnard College",
+    "href": "/work/barnard-college.html"
+  },
+  {
+    "id": 23,
+    "title": "BSN Sports",
+    "href": "/work/bsn-sports.html"
+  },
+  {
+    "id": 24,
+    "title": "GEAPS",
+    "href": "/work/geaps.html"
   }
 ]
