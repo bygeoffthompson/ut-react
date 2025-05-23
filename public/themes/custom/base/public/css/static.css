@@ -9574,28 +9574,41 @@ body > img {
 .search-toggle {
     display: none !important;
 }
-.heartbeat {
-    height: 75px;
-    margin: 24px 0;
-    overflow: hidden;
+#block-homepageherovideo .tint {
+    background: rgba(0,0,0,.34);
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+}
+
+#block-homepageherovideo {
+    background: #fff;
+    min-height: 300px;
     position: relative;
+}
+#block-homepageherovideo iframe {
+    height: 600px;
+    scale: 4;
     width: 100%;
 }
-.heartbeat .line {
-    background: #003b87;
-    height: 5px;
-    margin-top: 35px;
+#block-homepageherovideo .text {
+    color: #fff;
+    margin-top: -400px;
+    padding: 1rem 1rem 3rem;
+    position: relative;
+    z-index: 1;
 }
-.heartbeat svg {
-    background: #fff;
-    height: 75px;
-    left: 50px;
-    position: absolute;
-    top: 0;
-    width: 75px;
-}
-#block-homepagehero {
-    background: #fff;
+@media (min-width:768px) {
+    #block-homepageherovideo iframe {
+        scale: 2;
+    }
+    #block-homepageherovideo .text {
+        max-width: 800px;
+        padding: 1rem;
+    }
 }
 #block-views-block-homepage-insights-homepage-insights {
     background: #f8f8f8;
