@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8" />
+<meta name="description" content="What is User Acceptance Testing In the software, website, and application development world, nearly every topic can seem complicated and confusing. Thankfully, there is one notable exception:  User acceptance testing (UAT) is fairly straightforward. Below, we will explain the who, what, where, why, and when of UAT in 2020.  But first, what is it? What is user acceptance testing (UAT)? User acceptance testing is commonly the last phase of testing to complete before that website, software, or application is released to a client or into the market." />
+<meta name="keywords" content="ecommerce" />
+<link rel="canonical" href="user-acceptance-testing.html" />
+<link rel="image_src" href="../sites/default/files/2023-02/unleashed-social-image.jpg" />
+<meta property="og:site_name" content="Unleashed Technologies" />
+<meta property="og:title" content="User Acceptance Testing" />
+<meta property="og:image" content="/sites/default/files/2020-04/What%2520is%2520User%2520Acceptance%2520Testing%2520%25282020%2529.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="User Acceptance Testing" />
+<meta name="twitter:image" content="/sites/default/files/2020-04/What%2520is%2520User%2520Acceptance%2520Testing%2520%25282020%2529.png" />
+<meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<noscript><link rel="stylesheet" href="../core/themes/claro/css/components/dropbutton-noscript.css?svl0gm" />
+</noscript><link rel="icon" href="../themes/custom/base/favicon.png" type="image/png" />
+
+    <!-- Google Tag Manager -->
+      <script type="566140774eae784753c03375-text/javascript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-5SHTHM4');</script>
+    <!-- End Google Tag Manager -->
+    <title>User Acceptance Testing | Unleashed</title>
+    <link rel="stylesheet" media="all" href="../core/assets/vendor/normalize-css/normalize.css?svl0gm" />
+      <link rel="stylesheet" media="all" href="../themes/custom/base/public/css/static.css" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/align.module.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/fieldgroup.module.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/container-inline.module.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/clearfix.module.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/details.module.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/hidden.module.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/item-list.module.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/js.module.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/nowrap.module.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/position-container.module.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/reset-appearance.module.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/resize.module.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/tablesort.module.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/misc/components/progress.module.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/ajax-progress.module.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/modules/views/css/views.module.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../modules/contrib/webform/css/webform.element.details.toggle.css%3Fsvl0gm.css" />
+<link rel="stylesheet" media="all" href="../modules/contrib/webform/css/webform.element.message.css%3Fsvl0gm.css" />
+<link rel="stylesheet" media="all" href="../modules/contrib/webform/css/webform.form.css%3Fsvl0gm.css" />
+<link rel="stylesheet" media="all" href="../modules/contrib/paragraphs/css/paragraphs.unpublished.css%3Fsvl0gm.css" />
+<link rel="stylesheet" media="all" href="../modules/contrib/webform/css/webform.theme.claro.css%3Fsvl0gm.css" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/base/variables.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/base/elements.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/base/typography.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/base/print.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/layout/system-admin--layout.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/layout/breadcrumb.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/layout/local-actions.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/layout/layout.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/system-admin--admin-list.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/system-admin--links.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/system-admin--modules.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/system-admin--panel.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/layout/card-list.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/card.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/classy/components/container-inline.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/classy/components/exposed-filters.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/classy/components/field.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/classy/components/icons.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/classy/components/inline-form.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/classy/components/item-list.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/classy/components/link.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/classy/components/links.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/classy/components/menu.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/classy/components/more-link.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/classy/components/tablesort.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/classy/components/textarea.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/classy/components/ui-dialog.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/accordion.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/action-link.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/content-header.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/ckeditor5.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/container-inline.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/container-inline.module.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/breadcrumb.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/button.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/details.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/divider.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/messages.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/entity-meta.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/fieldset.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/form.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/form--checkbox-radio.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/form--field-multiple.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/form--managed-file.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/form--text.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/form--select.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/help.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/image-preview.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/menus-and-lists.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/modules-page.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/node.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/page-title.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/pager.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/skip-link.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/tables.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/table--file-multiple-widget.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/search-admin-settings.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/tablesort-indicator.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/system-status-report-general-info.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/system-status-report.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/system-status-counter.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/system-status-report-counters.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/tableselect.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/tabs.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/progress.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/views-exposed-form.css?svl0gm" />
+<link rel="stylesheet" media="all" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
+<link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
+<link rel="stylesheet" media="all" href="../themes/custom/base/public/css/style.css%3Fsvl0gm.css" />
+<link rel="stylesheet" media="all" href="../themes/custom/base/public/css/components/media-embed.css%3Fsvl0gm.css" />
+<link rel="stylesheet" media="all" href="../themes/custom/base/public/css/components/text-card.css%3Fsvl0gm.css" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/theme/colors.css?svl0gm" />
+
+    <script src="../core/misc/touchevents-test.js?v=10.4.4" type="566140774eae784753c03375-text/javascript"></script>
+
+    <script type="566140774eae784753c03375-text/javascript">
+      var etPixelId = '6RPfHc7jWqsDJNv8F';
+      var etPixel = document.createElement('img');
+      etPixel.src = '//pixel.locker2.com/image/' + etPixelId + '.png?cb=' + Math.round(new Date().getTime());
+      etPixel.setAttribute("referrerpolicy", "no-referrer-when-downgrade"); document.addEventListener('DOMContentLoaded',
+        function() { document.body.appendChild(etPixel); }, false);
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-984961901" type="566140774eae784753c03375-text/javascript"></script>
+    <script type="566140774eae784753c03375-text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-984961901');
+    </script>
+    <!-- Event snippet for Page view conversion page -->
+    <script type="566140774eae784753c03375-text/javascript">
+      gtag('event', 'conversion', {'send_to': 'AW-984961901/KWyPCL7mgcUZEO2m1dUD'});
+    </script>
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5SHTHM4"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+        <a href="user-acceptance-testing.html#main-content" class="visually-hidden focusable">
+      Skip to main content
+    </a>
+    
+      <div class="page-wrapper dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <div  class="site-wrap">
+  <a id="main-content" tabindex="-1"></a>
+    <header class="header">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-6 col-sm-3">  <div id="region-header">
+        <div class="site-branding">
+								<a href="../index.html" title="Home" rel="home">
+				<img src="../themes/custom/base/logo.svg" alt="Home"/>
+			</a>
+				
+	</div>
+
+      </div>
+</div>
+      <div class="col-xs-6 col-sm-9">
+        <div class="nav-wrapper">
+          <div class="nav">
+            <div class="nav-toggle" aria-label="press enter to open the menu" tabindex="0">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="menu">  <div id="region-navigation">
+        
+									<ul class="unstyled">
+							          					<li class="level-1">
+						<a href="../about.html">About</a>
+											</li>
+				          					<li class="parent level-1">
+						<a href="../services.html" data-drupal-link-system-path="node/16">Services</a>
+																							<ul class="unstyled">
+								          					<li class="level-2">
+						<a href="../services/strategy-optimization.html">Strategy &amp; Optimization</a>
+											</li>
+				          					<li class="level-2">
+						<a href="../services/design-user-experience.html" data-drupal-link-system-path="node/7">Design &amp; User Experience</a>
+											</li>
+				          					<li class="level-2">
+						<a href="../services/technology-website-development.html" data-drupal-link-system-path="node/8">Technology &amp; Website Development</a>
+											</li>
+				          					<li class="level-2">
+						<a href="../services/eCommerce-website-development.html" data-drupal-link-system-path="node/241">eCommerce Website Development</a>
+											</li>
+				          					<li class="level-2">
+						<a href="../services/custom-application-development.html" data-drupal-link-system-path="node/245">Custom Application Development</a>
+											</li>
+				          					<li class="level-2">
+						<a href="../services/devops-hosting.html">DevOps &amp; Hosting</a>
+											</li>
+				          					<li class="level-2">
+						<a href="../services/evolving-services.html" data-drupal-link-system-path="node/10">Long-Term Partnership</a>
+											</li>
+							</ul>
+			
+											</li>
+				          					<li class="level-1">
+						<a href="../industries.html" data-drupal-link-system-path="node/21">Industries</a>
+											</li>
+				          					<li class="level-1">
+						<a href="../insights.html" title="Valuable blogs, resources, news, and research for trending and important industry topics for eCommerce, website development, and custom technology solutions." data-drupal-link-system-path="node/18">Blog</a>
+											</li>
+				          					<li class="level-1">
+						<a href="../work.html" data-drupal-link-system-path="work">Work</a>
+											</li>
+							</ul>
+			
+
+
+
+
+      </div>
+</div>
+            <div class="utility">  <div id="region-utility">
+        <nav role="navigation" aria-labelledby="block-utility-menu" id="block-utility" class="block block-menu navigation menu--utility">
+            
+  <h2 class="visually-hidden" id="block-utility-menu">Utility</h2>
+  
+
+        
+									<ul class="unstyled">
+							          					<li class="level-1">
+						<a href="../start-project.html" data-drupal-link-system-path="node/265">Start a Project</a>
+											</li>
+							</ul>
+			
+
+
+
+
+  </nav>
+
+      </div>
+</div>
+          </div>
+          <div class="toggles">
+            <div class="search-toggle" aria-label="press enter to open the search" tabindex="0">
+              <i class="icon-search"></i>
+            </div>
+            <div class="nav-toggle" aria-label="press enter to open the menu" tabindex="0">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="site-search" aria-label="Primary">
+      <form method="get" action="/search/results" autocomplete="off">
+        <div class="form-item inline">
+          <input autocomplete="off" type="text" name="keywords" placeholder="What are you looking for?" aria-label="Please enter your search keywords" />
+          <button class="btn-search" type="submit" aria-label="click to submit search"><i class="icon-search"></i></button>
+          <div class="search-toggle" aria-label="press enter to close the search" tabindex="0">
+            <i class="icon-close"></i>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</header>
+      <section class="banner" role="banner" aria-label="Banner">
+      <div class="container-fluid">
+        <div class="row">  <div id="region-banner">
+          <div class="insight-hero">
+    <div class="container">
+      <div class="crumbs simple">  <nav role="navigation" class="breadcrumb">
+    <h2 class="visually-hidden">Breadcrumb</h2>
+                  <a href="../index.html">Home</a>&nbsp;&nbsp;/&nbsp;&nbsp;
+                        <span>User Acceptance Testing</span>
+            </nav>
+</div>
+              <div class="image">
+          <div class="field field--name-field-media field--type-entity-reference-revisions field--label-hidden">
+            
+<div class="base__media-embed">
+      <div class="slider">
+        
+    </div>
+    <div class="arrows">
+        <div class="prev-slide arrow"><i class="icon-arrow-left"></i></div>
+        <div class="next-slide arrow"><i class="icon-arrow-right"></i></div>
+    </div>
+  </div>
+
+      </div>
+
+          <div class="type"><div class="field field--name-field-insight-type field--type-entity-reference field--label-hidden">
+            Blog
+      </div>
+</div>
+        </div>
+            <div class="text">
+        <h1 class="heading"><div class="field field--name-field-heading field--type-string field--label-hidden">
+            What is User Acceptance Testing?
+      </div>
+</h1>
+      </div>
+    </div>
+  </div>
+
+      </div>
+</div>
+      </div>
+    </section>
+              <section class="main" role="main" aria-label="Main Content">
+                    <section class="content" aria-label="Content">
+          <div class="container">
+            <div class="row">
+                                                          <div class="col-xs-12 col-md-3 pull-right">
+                  <div class="sidebar top"></div>
+                </div>
+                <div class="col-xs-12 col-md-8">
+                  <div class="main-content">  <div id="region-content">
+        <div data-drupal-messages-fallback class="hidden messages-list"></div>
+<div id="block-base-content--2" class="block">
+  
+    
+      <article  class="insight">
+  <div class="text">
+    <div class="byline">
+      By <span class="field field--name-uid field--type-entity-reference field--label-hidden"><span>Unleashed</span></span>
+ on Mar 11, 2020      <hr>
+    </div>
+    <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden">
+            <h2>What is User Acceptance Testing</h2>
+<p>In the software, website, and application development world, nearly every topic can seem complicated and confusing. Thankfully, there is one notable exception:&nbsp; User acceptance testing (UAT) is fairly straightforward. Below, we will explain the who, what, where, why, and when of UAT in 2020.&nbsp;</p>
+<p>But first, what is it?</p>
+<h2>What is user acceptance testing (UAT)?</h2>
+<p>User acceptance testing is commonly the last phase of testing to complete before that website, software, or application is released to a client or into the market.</p>
+<h2>What's the goal of User Acceptance Testing?</h2>
+<p>The goal of UAT is to make sure the software, website or application can handle all required tasks in real-world scenarios, according to user specifications. This type of UAT process is often called beta testing (see more below). The reason this final phase of testing is completed is to be sure that, once released, the software, website or application is free of any defects that would impede users from completing tasks in their day-to-day business operations.</p>
+<h2>Different Types of UAT?</h2>
+<p>There are several different types of product tests that qualify as user acceptance testing. Alpha testing, beta testing, black box testing, contract acceptance testing, operational acceptance testing, and regulation acceptance testing.</p>
+<h3><img alt="Alpha Testing icon" src="../sites/default/files/alpha-testing.svg" style="width: 13%;">&nbsp;Alpha Testing</h3>
+<p>Alpha testing is completed inside the development environment before the website or software is seen by external testers. In this phase of testing, an internal team will review the functionality and workflow of the software. The team then records any found issues and provides additional feedback to the development team.&nbsp;</p>
+<h3><img alt="Beta Testing icon" src="../sites/default/files/beta-testing.svg" style="width: 13%;">&nbsp;Beta Testing</h3>
+<p>Beta testing is completed by groups of end-users or subject matter experts (SME). They will begin using the software or application the way it was designed to function and record any issues they find. They would again provide feedback to developers, so improvements can be made.&nbsp;</p>
+<h3><img alt="Black Box Testing icon" src="../sites/default/files/black-box-testing.svg" style="width: 13%;">&nbsp;Black Box Testing</h3>
+<p>In black box testing, the software is reviewed with the testers unable to see internal coding structures. During this process, the end-users will complete specific functions with only the knowledge of what the application is supposed to do. Typically, there is little to no guidance about how these functions should be completed.&nbsp;</p>
+<h3><img alt="Contract Acceptance Testing icon" src="../sites/default/files/contract-acceptance-testing.svg" style="width: 13%;">&nbsp;Contract Acceptance Testing</h3>
+<p>During contract acceptance testing (CAT), the software or application in development is tested against specific predetermined and well-defined criteria. These specifications are defined during the discovery process, added to the contract, and maybe a part of legal requirements for payment.&nbsp;</p>
+<h3><img alt="Operational Acceptance Testing icon" src="../sites/default/files/operational-acceptance-testing.svg" style="width: 13%;">&nbsp;Operational Acceptance Testing</h3>
+<p>Operational acceptance testing (<a href="https://www.geeksforgeeks.org/operational-acceptance-testing-oat/">OAT</a>) places a heavy focus on validating the workflows, security, and the operational readiness of the website, mobile app, or software. OAT&nbsp; will validate the website or app performs without error in its standard operating environment (SOE).</p>
+<h3><img alt="Regulation Acceptance Testing icon" src="../sites/default/files/regulation-acceptance-testing.svg" style="width: 13%;">&nbsp;Regulation Acceptance Testing</h3>
+<p>Regulation acceptance testing (RAT) reviews if the software or application meets all governmental, legal, and safety standards within the applicable industry.&nbsp;</p>
+<h2>When Should You Start User Acceptance Testing?&nbsp;</h2>
+<p>Testing should not start until the website, software or application being created is close to completion. UAT starts after unit, integration and system testing has been completed finding no major issues and the codebase is fully developed.</p>
+<p>So who is testing and how?</p>
+<h2>Who is involved in testing?</h2>
+<p>Whenever possible, the most important group to include in <a href="https://en.wikipedia.org/wiki/Acceptance_testing">UAT</a>&nbsp;should be the end-users of the software, website or application, which may also be called the subject-matter experts (SME). They are the individuals that will be using and interacting with the product on a daily basis. As the most impacted audience once the product rolled out, this daily usage will allow them to find problems that the internal team may not.&nbsp;</p>
+<p>Other personas who could participate in UAT could include:</p>
+<ul>
+<li style="text-align: justify;">Product Managers</li>
+<li style="text-align: justify;">Customer Service Representatives</li>
+<li style="text-align: justify;">Paid Beta Testers</li>
+<li style="text-align: justify;">Segmented portion of end-users</li>
+</ul>
+<p style="text-align: justify;">&nbsp;</p>
+<p>When identifying users, It is important to consider that tests should not focus on minor or cosmetic issues, like color schemes, spelling errors or software glitches. These issues must be identified and fixed by developers during earlier testing phases, such as unit testing or integration testing.</p>
+<p>Once you identify your UAT team, it’s time to plan and conduct your test:</p>
+<h2>Planning And Conducting Your Test</h2>
+<p>As with everything, planning is the key to successful UAT. A well-structured user acceptance testing plan will limit the number of re-tests needed to complete your project and drive down the associated costs of fixing mistakes. Creating a user acceptance testing checklist will help guide your team through each stage of the process. Some of the questions you should ask as part of&nbsp; your UAT checklist are:</p>
+<ul>
+<li style="text-align: justify;">Has the acceptance criteria been defined?</li>
+<li style="text-align: justify;">Is all input data available that is required for testing?</li>
+<li style="text-align: justify;">Has the testing procedure been defined?</li>
+<li style="text-align: justify;">Were all problems documented?</li>
+<li style="text-align: justify;">Were all identified problems resolved?</li>
+<li style="text-align: justify;">What aspects of business functionality need to be tested to gain the approval of clients?</li>
+<li style="text-align: justify;">Who is responsible for which tasks? Who’s doing the strategic planning?</li>
+<li style="text-align: justify;">Who’s managing the logistics?</li>
+</ul>
+<p style="text-align: justify;">This checklist can provide a strong quality assurance test of your testing plan. After your checklist is complete, let's move on.</p>
+<h2>Design the user acceptance test cases</h2>
+<p>Your tests should be designed around communications received from your end-users or client that started during the discovery phase of your project. Execute tests against these predetermined scenarios that represent how your end-users would interact with the website or software as part of their daily activities. Plan to keep tests broad in nature to allow for the testers to navigate freely to complete tasks.</p>
+<p>Stay away from click-by-click test steps, as these do not allow for any variance during the completion of activities and is not a realistic test of end usage. Once your testing is created, you need to make sure you have templates to record test results and internal procedures in place to effectively log the feedback you will receive once testing starts.</p>
+<p>Now, let's move on to testing:</p>
+<h2>Execute Your Test</h2>
+<p>After your test cases have been accepted, the UAT team can begin completing each task and any additional related test that may need to be completed. Typically, testing happens in a group setting like a conference room (or in a shared virtual environment). All users, the project manager, quality assurance specialists and build team representatives will work closely together over a few days complete designed tasks and work through all the acceptance test cases.</p>
+<h2>Performance Feedback</h2>
+<p>After testing is completed, the SME/end users provide feedback to the build team. Feedback typically contains both positive comments and reports of defects, bugs or recommendations to streamline or increase functionalities. The team manager needs to document the end-users findings and begin to triage the bug fixes and requests.</p>
+<h2>Acceptance testing triage</h2>
+<p>Once performance feedback has been documented, the build team reviews feedback from either an internal Quality Assurance Specialist or the end-users. The team then triages that feedback and prioritizes it based on its severity level. Triage often includes the client to confirm which feedback, based on different criteria, may need clarification, should be acted on, or should not be acted on and what items should receive the highest priority.</p>
+<p>Remember to keep UAT feedback and remediation cycles concise. This will be important as feedback trickles in, which can lead to fragmented remediation and add cost to the project via duplicated work. It’s best to allow a set period of time for the client to provide their UAT feedback, then triage that feedback once it’s all in, and remediate thereafter. The overlap in these steps should be minimal, if any at all.</p>
+<p><img alt="user acceptance testing - user acceptance testing cycle " src="../sites/default/files/acceptance-testing-triage.svg" style="width: 100%;"></p>
+<p>Ensuring clear and concise UAT cycles is important to the health of the project. Triage plays a critical role in that process and helps to manage expectations and ensure that feedback is addressed. Moreover, it adds value and increases functionality to the overall build. Once the software, website or application is working properly and meets the specifications of your client, it is time to have the project reviewed and signed off by the client.</p>
+<p>It's now time to meet with your client:</p>
+<h2>UAT Sign off meeting</h2>
+<p>Before moving into production or going "live", you want to make sure there are no critical defects left open and that the software, website or application meets all contractual and business requirements. You are now ready to meet with all client stakeholders to demonstrate completeness against all contracted requirements. Often, there may be legal requirements for acceptance of the system that ties into payment.&nbsp;</p>
+<h2>Conclusion</h2>
+<p>There will be many forms of testing that occur in the full lifecycle and development for software, websites, or applications. Including user acceptance testing as one of the tools in the development of projects will reduce the probability of unexpected issues. The full <a href="https://www.unleashed-technologies.com/blog/2012/11/01/what-expect-quality-assurance-testing">quality assurance</a> process goes hand-in-hand with reducing the amount of required maintenance, driving down overall cost, and increasing client satisfaction.</p>
+<h3>Important points:</h3>
+<ul>
+<li>In regular software development scenarios, UAT is carried out in the QA environment. If there is no staging or UAT environment.</li>
+<li>UAT is more effective when the client is involved in the process.</li>
+</ul>
+<h2>Bonus Tip, Test Automation Tools</h2>
+<p>There are a number of tools available on the market used for user acceptance testing. One Of the most popular is:</p>
+<h3>Selenium</h3>
+<p><a href="https://www.selenium.dev/">Selenium</a> is an open-source portable framework for testing web applications. Selenium provides a playback tool for authoring functional tests without the need to learn a test scripting language</p>
+<p>Please take some time to check out Selenium and let us know if you like the tool. If you prefer another tool, let us know!</p>
+
+      </div>
+
+  </div>
+  </article>
+
+  </div>
+
+      </div>
+</div>
+                </div>
+                <div class="col-xs-12 col-md-3 pull-right">
+                  <div class="sidebar bottom">  <div id="region-sidebar-bottom">
+        <div  id="block-sidebar-insight" class="block">
+  
+  
+                <h4><strong>Related Services</strong></h4>
+      <div class="field field--name-field-related-services field--type-entity-reference field--label-hidden">
+            <div><a href="../services/technology-website-development.html" hreflang="en">Technology &amp; Website Development</a></div>
+          <div><a href="../services/strategy-optimization.html" hreflang="en">Strategy &amp; Website Optimization</a></div>
+      </div>
+
+      </div>
+<div id="block-newslettersignup" class="block">
+  
+    
+      <div class="field field--name-field-component field--type-entity-reference-revisions field--label-hidden">
+              <div class="paragraph paragraph--type--section paragraph--view-mode--default">
+        
+      <section class="section ">
+    <div class="container">    
+                
+
+   <div class="paragraph paragraph--type--layout paragraph--view-mode--default">
+                
+          <div class="base__layout ">
+    <div class="container">
+      <div class="item-grid">
+        <div class="body-text">
+                  </div>
+        <div class="clearfix grid  one">
+
+ 
+    <div class="base__text-card primary has-bg">
+    <div class="inner">
+                    <h3>
+                <div class="field field--name-field-title field--type-string field--label-hidden">
+            Got FOMO?
+      </div>
+
+            </h3>
+               <div class="blurb">
+           <div class="clearfix text-formatted field field--name-field-rich-text field--type-text-long field--label-hidden">
+            <p>Join our newsletter and you'll never miss out!</p>
+<p><a class="btn secondary" href="../newsletter-signup.html">Sign up today</a></p>
+
+      </div>
+
+       </div>
+   </div>
+</div>
+</div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+      </div>
+  </section>
+  </div>
+
+      </div>
+
+  </div>
+
+      </div>
+</div>
+                </div>
+                          </div>
+          </div>
+        </section>
+                </section>
+        <section class="feature" role="complementary" aria-label="Featured Bottom Content">
+      <div class="container-fluid">
+        <div class="row">  <div id="region-feature">
+        <div  class="views-element-container section has-bg white" id="block-views-block-homepage-insights-related-insights">
+  
+      <h2 class="heading">Related Insights</h2>
+    
+      <div class="container"><div>
+<div  class="insights related view view-homepage-insights view-id-homepage_insights view-display-id-related_insights js-view-dom-id-aa90cff0d940f97bf6d6c09abd69a84a02971631199f080143123f3f88a4dbe2">
+  
+  
+  
+
+    
+  
+
+      <div class="view-content">    <article class="insight teaser">
+  <div class="img"><a href="../blog/healthcare-web-development-best-practices-build-credibility-online.html"><div class="field field--name-field-teaser-image field--type-entity-reference field--label-hidden">
+              <img loading="lazy" src="../sites/default/files/styles/800x600/public/2025-04/Picture11.jpg%3Fh=11ee7a56&amp;itok=LnpAJxPI" width="800" height="600" alt="Building Credibility Online: Web Development Best Practices for Diseased-Focused Associations" class="image-style-_00x600" />
+
+
+
+      </div>
+</a></div>
+  <div class="blurb">
+    <div class="inner">
+      <div class="type"><div class="field field--name-field-insight-type field--type-entity-reference field--label-hidden">
+            Blog
+      </div>
+</div>
+      <h3><a href="../blog/healthcare-web-development-best-practices-build-credibility-online.html"><span class="field field--name-title field--type-string field--label-hidden">Healthcare Web Development Best Practices To Build Credibility Online</span>
+</a></h3>
+      <p>Healthcare websites require strategic approach. Learn actionable tips to develop sites for disease-focused associations.</p>
+      <a href="../blog/healthcare-web-development-best-practices-build-credibility-online.html" class="arrow-link primary" aria-label="Continue reading the article titled Healthcare Web Development Best Practices To Build Credibility Online">Read More</a>
+    </div>
+  </div>
+</article>
+
+    <article class="insight teaser">
+  <div class="img"><a href="../blog/transforming-associations-generative-ai-and-specialized-digital-solutions.html"><div class="field field--name-field-teaser-image field--type-entity-reference field--label-hidden">
+              <img loading="lazy" src="../sites/default/files/styles/800x600/public/2025-04/Gen%20AI%20Associations.jpg%3Fh=3113d5a0&amp;itok=fbnps93c" width="800" height="600" alt="Improve member engagement, maximize cost savings, and address security concerns. We uncover the power of generative AI and digital solutions for associations." class="image-style-_00x600" />
+
+
+
+      </div>
+</a></div>
+  <div class="blurb">
+    <div class="inner">
+      <div class="type"><div class="field field--name-field-insight-type field--type-entity-reference field--label-hidden">
+            Blog
+      </div>
+</div>
+      <h3><a href="../blog/transforming-associations-generative-ai-and-specialized-digital-solutions.html"><span class="field field--name-title field--type-string field--label-hidden">Transforming Associations with Generative AI and Specialized Digital Solutions</span>
+</a></h3>
+      <p>Boost engagement, cut costs, and enhance security with Generative AI and digital tools for Associations.</p>
+      <a href="../blog/transforming-associations-generative-ai-and-specialized-digital-solutions.html" class="arrow-link primary" aria-label="Continue reading the article titled Transforming Associations with Generative AI and Specialized Digital Solutions">Read More</a>
+    </div>
+  </div>
+</article>
+
+    <article class="insight teaser">
+  <div class="img"><a href="../blog/modern-eCommerce-tools.html"><div class="field field--name-field-teaser-image field--type-entity-reference field--label-hidden">
+              <img loading="lazy" src="../sites/default/files/styles/800x600/public/2023-12/ECommerce%20Podcast%20Blog%20Image.png%3Fh=887ca5a5&amp;itok=U0vHeDgo" width="800" height="600" alt="Shopware Podcast Preview Image" class="image-style-_00x600" />
+
+
+
+      </div>
+</a></div>
+  <div class="blurb">
+    <div class="inner">
+      <div class="type"><div class="field field--name-field-insight-type field--type-entity-reference field--label-hidden">
+            Blog
+      </div>
+</div>
+      <h3><a href="../blog/modern-eCommerce-tools.html"><span class="field field--name-title field--type-string field--label-hidden">Modern eCommerce Tools</span>
+</a></h3>
+      <p>Learn how Unleashed and Shopware are shaping the future of digital commerce with cutting edge technology.</p>
+      <a href="../blog/modern-eCommerce-tools.html" class="arrow-link primary" aria-label="Continue reading the article titled Modern eCommerce Tools">Read More</a>
+    </div>
+  </div>
+</article>
+
+</div>
+    
+  
+
+  
+
+  
+
+      <footer><p align="center"><a href="../insights.html" class="btn primary">All Insights</a></p></footer>
+  
+  
+</div>
+</div>
+</div>
+  </div>
+
+      </div>
+</div>
+      </div>
+    </section>
+      <footer>
+  <section class="footer" aria-label="Footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12  col-sm-6 col-lg-3">
+          <div class="logo-footer visible-xs">
+            <a href="../index.html"><img src="../themes/custom/base/assets/img/logo-reverse.svg" /></a>
+          </div>
+          <div class="footer-tag">Let's Get Started!</div>
+          <a href="../contact-us.html" class="btn">Contact Us</a>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-lg-4 col-lg-push-5">
+          <div class="logo-footer hidden-xs">
+            <a href="../index.html"><img src="../themes/custom/base/assets/img/logo-reverse.svg" /></a>
+          </div>
+          <div class="newsletter-block">
+            <h4>Sign up for our newsletter</h4>
+              <div id="region-footer">
+        <div id="block-webform" class="newsletter block">
+  
+    
+      <form class="webform-submission-form webform-submission-add-form webform-submission-newsletter-form webform-submission-newsletter-add-form webform-submission-newsletter-node-163-form webform-submission-newsletter-node-163-add-form js-webform-details-toggle webform-details-toggle" data-drupal-selector="webform-submission-newsletter-node-163-add-form" action="user-acceptance-testing.html" method="post" id="webform-submission-newsletter-node-163-add-form" accept-charset="UTF-8">
+  
+      <div class="form-type-email col-xs-12 js-form-item form-item js-form-type-email form-item-email js-form-item-email form-no-label">
+      <label for="edit-email" class="form-item__label visually-hidden js-form-required form-required">Email</label>
+        <input data-drupal-selector="edit-email" type="email" id="edit-email" name="email" value="" size="60" maxlength="254" placeholder="Enter your email" class="form-email required form-element form-element--type-email form-element--api-email" required="required" aria-required="true"/>
+        </div>
+<div data-drupal-selector="edit-actions" class="form-actions webform-actions js-form-wrapper form-wrapper" id="edit-actions"><div class="row">
+	<div class="col-xs-12">
+		  <button class="webform-button--submit btn-icon icon-chevron button--primary js-form-submit form-submit btn" data-drupal-selector="edit-actions-submit" type="submit" id="edit-actions-submit" name="op" value="Submit">Submit</button>
+
+	</div>
+</div></div>
+<input autocomplete="off" data-drupal-selector="form-uzt3xtk-zcjv4jtgjiuybwmenm8vuasbvwl3vehuf7y" type="hidden" name="form_build_id" value="form-uzT3xtk_zcJV4JTgjIuybwmEnM8vuAsBvwl3vEhuF7Y"/><input data-drupal-selector="edit-webform-submission-newsletter-node-163-add-form" type="hidden" name="form_id" value="webform_submission_newsletter_node_163_add_form"/><input data-drupal-selector="edit-honeypot-time" type="hidden" name="honeypot_time" value="9zjxKNvP0-rashDQQT200SS5-Z_o4OMWS8LmDY0ppuE"/><div class="url-textfield js-form-wrapper form-wrapper" style="display: none !important;">    <div class="col-xs-12 js-form-item form-item js-form-type-textfield form-item-url js-form-item-url">
+      <label for="edit-url" class="form-item__label">Leave this field blank</label>
+        <input autocomplete="off" data-drupal-selector="edit-url" type="text" id="edit-url" name="url" value="" size="20" maxlength="128" class="form-text form-element form-element--type-text form-element--api-textfield"/>
+        </div>
+</div>
+
+
+  
+</form>
+
+  </div>
+
+      </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="copyright" aria-label="Copyright">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-7 pull-right">
+          <div class="links">
+            <ul class="inline">
+              <li>
+                <a href="../about.html">About Us</a>
+              </li>
+              <li>
+                <a href="../contact-us.html">Contact Us</a>
+              </li>
+              <li>
+                <a href="../careers.html">Careers</a>
+              </li>
+            </ul>
+            <ul class="social">
+              <li>
+                <a href="https://www.linkedin.com/company/unleasheddigital/mycompany/"><i class="icon-linkedin"></i></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/unleashtech?lang=en"><i class="icon-twitter"></i></a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/UnleashedTechnologies/"><i class="icon-facebook"></i></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/unleashed_tech/?hl=en"><i class="icon-instagram"></i></a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/channel/UCyRKDUl6XdtxtBcs7-TyylQ"><i class="icon-youtube"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-5">
+          <p>
+            © 2025 Unleashed Technologies. All Rights Reserved. <span class="hidden-xs">|</span> <a href="../privacy-policy.html">Privacy Policy</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</footer>
+</div>
+
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"","currentPath":"node\/163","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxPageState":{"libraries":"eJyFkGtuxCAMhC-UkCNFBlygNRhhs4-evnQ37baNtvljWePPo7EtCC6Oc-WCReXRrpbYvU32zzxyxgoB11QkhagyNyRQ9N_CbkWuophX26D4VMIT443KkMoBgaUfESIjojyhzmhfuOWf00Bsge59Rp9gxmzR3wXFi84OmpfJETTe6Fn0SuOeyXHDpQxHoPSOU4UGoUGNsvjWK5B5KKaX2i0licP8lPAsy60aeIXLLyGz74TTlvUrs0HCcb8ajwqJxAicjiHlEP7x2t61m3-WnahxLJnbHz4A4CvfKA","theme":"base","theme_token":null},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true},"views":{"ajax_path":"\/views\/ajax","ajaxViews":{"views_dom_id:aa90cff0d940f97bf6d6c09abd69a84a02971631199f080143123f3f88a4dbe2":{"view_name":"homepage_insights","view_display_id":"related_insights","view_args":"163\/163","view_path":"\/node\/163","view_base_path":"admin\/content\/insights","view_dom_id":"aa90cff0d940f97bf6d6c09abd69a84a02971631199f080143123f3f88a4dbe2","pager_element":0}}},"user":{"uid":0,"permissionsHash":"b4092bf008ff30cc2c566537818c31d6d5792dacbeb6fbb09d313f65c3f21367"}}</script>
+<script src="../core/assets/vendor/jquery/jquery.min.js?v=3.7.1" type="566140774eae784753c03375-text/javascript"></script>
+<script src="../core/assets/vendor/once/once.min.js?v=1.0.1" type="566140774eae784753c03375-text/javascript"></script>
+<script src="../core/misc/drupalSettingsLoader.js?v=10.4.4" type="566140774eae784753c03375-text/javascript"></script>
+<script src="../core/misc/drupal.js?v=10.4.4" type="566140774eae784753c03375-text/javascript"></script>
+<script src="../core/misc/drupal.init.js?v=10.4.4" type="566140774eae784753c03375-text/javascript"></script>
+<script src="../core/assets/vendor/tabbable/index.umd.min.js?v=6.2.0" type="566140774eae784753c03375-text/javascript"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="566140774eae784753c03375-text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js" type="566140774eae784753c03375-text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js" type="566140774eae784753c03375-text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/enquire.js/2.1.2/enquire.min.js" type="566140774eae784753c03375-text/javascript"></script>
+<script src="../themes/custom/base/assets/js/script.js%3Fv=10.4.4" type="566140774eae784753c03375-text/javascript"></script>
+<script src="../themes/custom/base/public/js/components/media-embed.js%3Fv=1.x" type="566140774eae784753c03375-text/javascript"></script>
+<script src="../core/misc/jquery.form.js?v=4.3.0" type="566140774eae784753c03375-text/javascript"></script>
+<script src="../core/misc/progress.js?v=10.4.4" type="566140774eae784753c03375-text/javascript"></script>
+<script src="../core/assets/vendor/loadjs/loadjs.min.js?v=4.3.0" type="566140774eae784753c03375-text/javascript"></script>
+<script src="../core/misc/debounce.js?v=10.4.4" type="566140774eae784753c03375-text/javascript"></script>
+<script src="../core/misc/announce.js?v=10.4.4" type="566140774eae784753c03375-text/javascript"></script>
+<script src="../core/misc/message.js?v=10.4.4" type="566140774eae784753c03375-text/javascript"></script>
+<script src="../core/themes/claro/js/messages.js?svl0gm" type="566140774eae784753c03375-text/javascript"></script>
+<script src="../core/misc/ajax.js?v=10.4.4" type="566140774eae784753c03375-text/javascript"></script>
+<script src="../core/themes/claro/js/ajax.js?svl0gm" type="566140774eae784753c03375-text/javascript"></script>
+<script src="../core/modules/views/js/base.js?v=10.4.4" type="566140774eae784753c03375-text/javascript"></script>
+<script src="../core/modules/views/js/ajax_view.js?v=10.4.4" type="566140774eae784753c03375-text/javascript"></script>
+<script src="../modules/contrib/webform/js/webform.element.details.save.js%3Fv=10.4.4" type="566140774eae784753c03375-text/javascript"></script>
+<script src="../modules/contrib/webform/js/webform.element.details.toggle.js%3Fv=10.4.4" type="566140774eae784753c03375-text/javascript"></script>
+<script src="../modules/contrib/webform/js/webform.element.message.js%3Fv=10.4.4" type="566140774eae784753c03375-text/javascript"></script>
+<script src="../core/misc/form.js?v=10.4.4" type="566140774eae784753c03375-text/javascript"></script>
+<script src="../modules/contrib/webform/js/webform.behaviors.js%3Fv=10.4.4" type="566140774eae784753c03375-text/javascript"></script>
+<script src="../core/misc/states.js?v=10.4.4" type="566140774eae784753c03375-text/javascript"></script>
+<script src="../modules/contrib/webform/js/webform.states.js%3Fv=10.4.4" type="566140774eae784753c03375-text/javascript"></script>
+<script src="../modules/contrib/webform/js/webform.form.js%3Fv=10.4.4" type="566140774eae784753c03375-text/javascript"></script>
+
+  <script src="../cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="566140774eae784753c03375-|49" defer></script></body>
+</html>

@@ -1,0 +1,2 @@
+!function(t,a,s){"use strict";t.behaviors.formLabels={attach:function(t,s){a(".labels-as-placeholders .form-item__label").parent().find("input, textarea").focusin((function(){a(this).parents(".form-item").addClass("focus")})).focusout((function(){a(this).parents(".form-item").removeClass("focus")})),a("input, textarea").change((function(){a(this).val()?a(this).parents(".form-item").addClass("has-value"):a(this).parents(".form-item").removeClass("has-value")}))}}}(Drupal,jQuery);
+//# sourceMappingURL=form.js.map

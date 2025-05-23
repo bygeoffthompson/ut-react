@@ -1,0 +1,2 @@
+!function(e,s,i){"use strict";e.behaviors.featuredClients={attach:function(e,i){s(".featured-clients .clients-slider").each((function(){let e=s(this);e.hasClass("slick-initialized")||e.slick({slidesToShow:5,slidesToScroll:1,autoplay:!0,autoSpeed:2e3,responsive:[{breakpoint:1024,settings:{slidesToShow:2}},{breakpoint:768,settings:{slidesToShow:1}}]})}))}}}(Drupal,jQuery);
+//# sourceMappingURL=featured-clients.js.map

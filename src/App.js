@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import data from './content.json'; // Import the JSON data
 
 function App() {
+  const [searchTerm, setSearchTerm] = useState('');
+  const [searchResults, setSearchResults] = useState([]);
+
+  useEffect(() => {
+    const results = data.filter(item =>
+        item.title.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+    setSearchResults(results);
+  }, [searchTerm]);
+
+  const handleChange = (event) => {
+    setSearchTerm(event.target.value);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div>
+        <input
+            type="text"
+            placeholder="Search by name..."
+            value={searchTerm}
+            onChange={handleChange}
+        />
+        <ul>
+          {searchResults.map(item => (
+              <li key={item.id}><a href={item.href}>{item.title}</a></li>
+          ))}
+        </ul>
+      </div>
   );
 }
 

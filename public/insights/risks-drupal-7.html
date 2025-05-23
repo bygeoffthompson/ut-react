@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8" />
+<meta name="description" content="In January 2025, Drupal 7 will reach the end of life meaning you need to upgrade to a newer version of Drupal for security and support." />
+<meta name="keywords" content="ecommerce" />
+<link rel="canonical" href="risks-drupal-7.html" />
+<link rel="image_src" href="../sites/default/files/2023-02/unleashed-social-image.jpg" />
+<meta property="og:site_name" content="Unleashed Technologies" />
+<meta property="og:title" content="Risks of Drupal 7" />
+<meta property="og:description" content="In Nov. 2023, Drupal 7 will reach end of life meaning you need a newer version of Drupal for security and support." />
+<meta property="og:image" content="/sites/default/files/2023-03/Drupal%207%20cost%20of%20not%20switching.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Risks of Drupal 7" />
+<meta name="twitter:image" content="/sites/default/files/2023-03/Drupal%207%20cost%20of%20not%20switching.png" />
+<meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<noscript><link rel="stylesheet" href="../core/themes/claro/css/components/dropbutton-noscript.css?svl0gm" />
+</noscript><link rel="icon" href="../themes/custom/base/favicon.png" type="image/png" />
+
+    <!-- Google Tag Manager -->
+      <script type="b53a3f1400a12af4ecdd3047-text/javascript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-5SHTHM4');</script>
+    <!-- End Google Tag Manager -->
+    <title>Risks of Drupal 7 | Unleashed</title>
+    <link rel="stylesheet" media="all" href="../core/assets/vendor/normalize-css/normalize.css?svl0gm" />
+      <link rel="stylesheet" media="all" href="../themes/custom/base/public/css/static.css" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/align.module.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/fieldgroup.module.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/container-inline.module.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/clearfix.module.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/details.module.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/hidden.module.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/item-list.module.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/js.module.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/nowrap.module.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/position-container.module.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/reset-appearance.module.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/resize.module.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/tablesort.module.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/misc/components/progress.module.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/ajax-progress.module.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/modules/filter/css/filter.caption.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/modules/media/css/filter.caption.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/modules/views/css/views.module.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../modules/contrib/webform/css/webform.element.details.toggle.css%3Fsvl0gm.css" />
+<link rel="stylesheet" media="all" href="../modules/contrib/webform/css/webform.element.message.css%3Fsvl0gm.css" />
+<link rel="stylesheet" media="all" href="../modules/contrib/webform/css/webform.form.css%3Fsvl0gm.css" />
+<link rel="stylesheet" media="all" href="../modules/contrib/paragraphs/css/paragraphs.unpublished.css%3Fsvl0gm.css" />
+<link rel="stylesheet" media="all" href="../modules/contrib/webform/css/webform.theme.claro.css%3Fsvl0gm.css" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/base/variables.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/base/elements.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/base/typography.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/base/print.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/layout/system-admin--layout.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/layout/breadcrumb.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/layout/local-actions.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/layout/layout.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/system-admin--admin-list.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/system-admin--links.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/system-admin--modules.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/system-admin--panel.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/layout/card-list.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/card.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/classy/components/container-inline.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/classy/components/exposed-filters.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/classy/components/field.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/classy/components/icons.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/classy/components/inline-form.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/classy/components/item-list.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/classy/components/link.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/classy/components/links.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/classy/components/menu.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/classy/components/more-link.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/classy/components/tablesort.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/classy/components/textarea.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/classy/components/ui-dialog.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/accordion.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/action-link.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/content-header.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/ckeditor5.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/container-inline.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/container-inline.module.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/breadcrumb.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/button.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/details.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/divider.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/messages.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/entity-meta.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/fieldset.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/form.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/form--checkbox-radio.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/form--field-multiple.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/form--managed-file.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/form--text.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/form--select.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/help.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/image-preview.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/menus-and-lists.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/modules-page.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/node.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/page-title.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/pager.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/skip-link.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/tables.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/table--file-multiple-widget.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/search-admin-settings.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/tablesort-indicator.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/system-status-report-general-info.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/system-status-report.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/system-status-counter.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/system-status-report-counters.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/tableselect.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/tabs.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/progress.css?svl0gm" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/components/views-exposed-form.css?svl0gm" />
+<link rel="stylesheet" media="all" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
+<link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
+<link rel="stylesheet" media="all" href="../themes/custom/base/public/css/style.css%3Fsvl0gm.css" />
+<link rel="stylesheet" media="all" href="../themes/custom/base/public/css/components/text-card.css%3Fsvl0gm.css" />
+<link rel="stylesheet" media="all" href="../core/themes/claro/css/theme/colors.css?svl0gm" />
+
+    <script src="../core/misc/touchevents-test.js?v=10.4.4" type="b53a3f1400a12af4ecdd3047-text/javascript"></script>
+
+    <script type="b53a3f1400a12af4ecdd3047-text/javascript">
+      var etPixelId = '6RPfHc7jWqsDJNv8F';
+      var etPixel = document.createElement('img');
+      etPixel.src = '//pixel.locker2.com/image/' + etPixelId + '.png?cb=' + Math.round(new Date().getTime());
+      etPixel.setAttribute("referrerpolicy", "no-referrer-when-downgrade"); document.addEventListener('DOMContentLoaded',
+        function() { document.body.appendChild(etPixel); }, false);
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-984961901" type="b53a3f1400a12af4ecdd3047-text/javascript"></script>
+    <script type="b53a3f1400a12af4ecdd3047-text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-984961901');
+    </script>
+    <!-- Event snippet for Page view conversion page -->
+    <script type="b53a3f1400a12af4ecdd3047-text/javascript">
+      gtag('event', 'conversion', {'send_to': 'AW-984961901/KWyPCL7mgcUZEO2m1dUD'});
+    </script>
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5SHTHM4"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+        <a href="risks-drupal-7.html#main-content" class="visually-hidden focusable">
+      Skip to main content
+    </a>
+    
+      <div class="page-wrapper dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <div  class="site-wrap">
+  <a id="main-content" tabindex="-1"></a>
+    <header class="header">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-6 col-sm-3">  <div id="region-header">
+        <div class="site-branding">
+								<a href="../index.html" title="Home" rel="home">
+				<img src="../themes/custom/base/logo.svg" alt="Home"/>
+			</a>
+				
+	</div>
+
+      </div>
+</div>
+      <div class="col-xs-6 col-sm-9">
+        <div class="nav-wrapper">
+          <div class="nav">
+            <div class="nav-toggle" aria-label="press enter to open the menu" tabindex="0">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="menu">  <div id="region-navigation">
+        
+									<ul class="unstyled">
+							          					<li class="level-1">
+						<a href="../about.html">About</a>
+											</li>
+				          					<li class="parent level-1">
+						<a href="../services.html" data-drupal-link-system-path="node/16">Services</a>
+																							<ul class="unstyled">
+								          					<li class="level-2">
+						<a href="../services/strategy-optimization.html">Strategy &amp; Optimization</a>
+											</li>
+				          					<li class="level-2">
+						<a href="../services/design-user-experience.html" data-drupal-link-system-path="node/7">Design &amp; User Experience</a>
+											</li>
+				          					<li class="level-2">
+						<a href="../services/technology-website-development.html" data-drupal-link-system-path="node/8">Technology &amp; Website Development</a>
+											</li>
+				          					<li class="level-2">
+						<a href="../services/eCommerce-website-development.html" data-drupal-link-system-path="node/241">eCommerce Website Development</a>
+											</li>
+				          					<li class="level-2">
+						<a href="../services/custom-application-development.html" data-drupal-link-system-path="node/245">Custom Application Development</a>
+											</li>
+				          					<li class="level-2">
+						<a href="../services/devops-hosting.html">DevOps &amp; Hosting</a>
+											</li>
+				          					<li class="level-2">
+						<a href="../services/evolving-services.html" data-drupal-link-system-path="node/10">Long-Term Partnership</a>
+											</li>
+							</ul>
+			
+											</li>
+				          					<li class="level-1">
+						<a href="../industries.html" data-drupal-link-system-path="node/21">Industries</a>
+											</li>
+				          					<li class="level-1">
+						<a href="../insights.html" title="Valuable blogs, resources, news, and research for trending and important industry topics for eCommerce, website development, and custom technology solutions." data-drupal-link-system-path="node/18">Blog</a>
+											</li>
+				          					<li class="level-1">
+						<a href="../work.html" data-drupal-link-system-path="work">Work</a>
+											</li>
+							</ul>
+			
+
+
+
+
+      </div>
+</div>
+            <div class="utility">  <div id="region-utility">
+        <nav role="navigation" aria-labelledby="block-utility-menu" id="block-utility" class="block block-menu navigation menu--utility">
+            
+  <h2 class="visually-hidden" id="block-utility-menu">Utility</h2>
+  
+
+        
+									<ul class="unstyled">
+							          					<li class="level-1">
+						<a href="../start-project.html" data-drupal-link-system-path="node/265">Start a Project</a>
+											</li>
+							</ul>
+			
+
+
+
+
+  </nav>
+
+      </div>
+</div>
+          </div>
+          <div class="toggles">
+            <div class="search-toggle" aria-label="press enter to open the search" tabindex="0">
+              <i class="icon-search"></i>
+            </div>
+            <div class="nav-toggle" aria-label="press enter to open the menu" tabindex="0">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="site-search" aria-label="Primary">
+      <form method="get" action="/search/results" autocomplete="off">
+        <div class="form-item inline">
+          <input autocomplete="off" type="text" name="keywords" placeholder="What are you looking for?" aria-label="Please enter your search keywords" />
+          <button class="btn-search" type="submit" aria-label="click to submit search"><i class="icon-search"></i></button>
+          <div class="search-toggle" aria-label="press enter to close the search" tabindex="0">
+            <i class="icon-close"></i>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</header>
+      <section class="banner" role="banner" aria-label="Banner">
+      <div class="container-fluid">
+        <div class="row">  <div id="region-banner">
+          <div class="insight-hero">
+    <div class="container">
+      <div class="crumbs simple">  <nav role="navigation" class="breadcrumb">
+    <h2 class="visually-hidden">Breadcrumb</h2>
+                  <a href="../index.html">Home</a>&nbsp;&nbsp;/&nbsp;&nbsp;
+                        <span>Risks of Drupal 7 </span>
+            </nav>
+</div>
+              <div class="type"><div class="field field--name-field-insight-type field--type-entity-reference field--label-hidden">
+            Blog
+      </div>
+</div>
+            <div class="text">
+        <h1 class="heading"><div class="field field--name-field-heading field--type-string field--label-hidden">
+            The True Cost of Staying with Drupal 7 
+      </div>
+</h1>
+      </div>
+    </div>
+  </div>
+
+      </div>
+</div>
+      </div>
+    </section>
+              <section class="main" role="main" aria-label="Main Content">
+                    <section class="content" aria-label="Content">
+          <div class="container">
+            <div class="row">
+                                                          <div class="col-xs-12 col-md-3 pull-right">
+                  <div class="sidebar top"></div>
+                </div>
+                <div class="col-xs-12 col-md-8">
+                  <div class="main-content">  <div id="region-content">
+        <div data-drupal-messages-fallback class="hidden messages-list"></div>
+<div id="block-base-content--2" class="block">
+  
+    
+      <article  class="insight">
+  <div class="text">
+    <div class="byline">
+      By <span class="field field--name-uid field--type-entity-reference field--label-hidden"><span>Unleashed</span></span>
+ on Jan 25, 2022      <hr>
+    </div>
+    <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden">
+            <p paraeid="{291c413b-6855-473a-9d71-e6fdcc5aa097}{67}" paraid="503103216"><em>Editor's Note: This article was originally published prior to Drupal 7 end of life being extended to January 2025. The article has been updated.&nbsp;</em></p>
+<p paraeid="{291c413b-6855-473a-9d71-e6fdcc5aa097}{67}" paraid="503103216">The end is nigh.&nbsp;In Janurary 2025, Drupal 7 will reach the end of life.</p>
+<p paraeid="{291c413b-6855-473a-9d71-e6fdcc5aa097}{67}" paraid="503103216">While we have helped many clients switch to Drupal 8, 9 or 10, there are many more organizations out there that have not yet made the move. Those organizations could end up in a difficult position when the upgrade is more of a requirement due to an aging site and the lack of community support. &nbsp;</p>
+      <div class="align-center media">
+        <div class="field field--name-field-media-image field--type-image field--label-hidden">
+              <img src="../sites/default/files/styles/max_1300x1300/public/migrated/sites/default/files/2022-01/drupal7-cost-1200x535.jpg%3Fitok=_K2vLPUp" width="1200" height="535" loading="lazy" class="image-style-max-1300x1300">
+
+
+
+      </div>
+
+    </div>
+  <p paraeid="{291c413b-6855-473a-9d71-e6fdcc5aa097}{97}" paraid="133020153">While upgrading to a new version of Drupal is historically a costly endeavor, the time has come for organizations to&nbsp;come to terms&nbsp;and realize that maintaining an end-of-life content management system (CMS) may end up being more costly than many organizations may realize. This is especially true if the site includes custom development of unique functionality and solution integrations. &nbsp;</p>
+<p paraeid="{291c413b-6855-473a-9d71-e6fdcc5aa097}{97}" paraid="133020153">Moreover, there needs to be a shift in mindset. More than any other version upgrade in the history of Drupal,&nbsp;a&nbsp;move from Drupal 7 should be viewed as a long-term investment in your organization’s website and its&nbsp;digital&nbsp;presence.&nbsp;</p>
+<h2 paraeid="{291c413b-6855-473a-9d71-e6fdcc5aa097}{97}" paraid="133020153">The Web (and Drupal) Is Always Evolving &nbsp;</h2>
+<p paraeid="{291c413b-6855-473a-9d71-e6fdcc5aa097}{137}" paraid="1654914926">At Unleashed, we often use the saying, “the web is fluid and always in motion.” This is true across web technology and certainly with community-supported open-source CMS solutions, like Drupal. Because it is&nbsp;open-source, the supporting community constantly explores ways to improve the product and identify innovations to integrate into the solution.&nbsp;</p>
+<p paraeid="{291c413b-6855-473a-9d71-e6fdcc5aa097}{137}" paraid="1654914926">The Drupal CMS operates using the scripting language PHP—on top of a web server and a database server—along with many other components. Additionally, what makes Drupal even more appealing to many uses is that the website functionality is extended through modules, which may be created and maintained by the Drupal community, or custom modules created by a development team for a specific client use case. The components are then implemented with special modules, called “themes,” which yield structured and styled HTML, with appropriate supporting elements like CSS, JS,&nbsp;images, and other resources.&nbsp;</p>
+<p paraeid="{291c413b-6855-473a-9d71-e6fdcc5aa097}{137}" paraid="1654914926">Together, these components can create powerful and dynamic websites that deliver on the unique challenges of different site users. However, these components cannot remain static in a rapidly developing and improving web technology environment. Performance and functionality are continually improving and, simultaneously, raising users’ expectations. &nbsp;</p>
+<p paraeid="{291c413b-6855-473a-9d71-e6fdcc5aa097}{137}" paraid="1654914926">As a result, the Drupal community is always pushing the technology forward, and the Drupal core and related elements are enhanced in each major release. For example, Drupal 7 is functionally and architecturally different from Drupal 8&nbsp;and 9, just like Drupal 6 was different from Drupal 7. Although concepts carry over, the codebase is not compatible by design. Work must be done by experienced Drupal developers to migrate code and content from an older major version to a newer major version of Drupal.&nbsp;</p>
+<p>&nbsp;</p>
+      <div class="align-center media">
+        <div class="field field--name-field-media-image field--type-image field--label-hidden">
+              <img src="../sites/default/files/styles/max_1300x1300/public/migrated/sites/default/files/2022-01/drupal7-cost-1200x628-02.jpg%3Fitok=fyzDk2iS" width="1300" height="681" loading="lazy" class="image-style-max-1300x1300">
+
+
+
+      </div>
+
+    </div>
+  <h2 paraeid="{291c413b-6855-473a-9d71-e6fdcc5aa097}{137}" paraid="1654914926">What End of Life Means for Drupal&nbsp;7&nbsp;</h2>
+<p paraeid="{291c413b-6855-473a-9d71-e6fdcc5aa097}{193}" paraid="1440480262">In January 2025, your organization’s Drupal 7 website will not explode or dissolve on your screen. It won’t be that dramatic or that quick. However, it does mark the end of an era for Drupal and a major step backward toward making your website antiquated.&nbsp;</p>
+<p paraeid="{291c413b-6855-473a-9d71-e6fdcc5aa097}{193}" paraid="1440480262">Officially, per <a href="https://drupal.org/" rel="noreferrer noopener" target="_blank">Drupal.org</a>, the end of life for Drupal 7 will mean: &nbsp;</p>
+<ul role="list">
+<li aria-setsize="-1" data-aria-level="1" data-aria-posinset="1" data-font="Symbol" data-leveltext="" data-listid="5" role="listitem">
+<p paraeid="{291c413b-6855-473a-9d71-e6fdcc5aa097}{210}" paraid="1984499629">The community at large will no longer create new projects, fix bugs in existing projects, write documentation, etc. around Drupal 7 &nbsp;</p>
+</li>
+<li aria-setsize="-1" data-aria-level="1" data-aria-posinset="2" data-font="Symbol" data-leveltext="" data-listid="5" role="listitem">
+<p paraeid="{291c413b-6855-473a-9d71-e6fdcc5aa097}{217}" paraid="1810587257">There will be no more core commits to Drupal 7 &nbsp;</p>
+</li>
+<li aria-setsize="-1" data-aria-level="1" data-aria-posinset="3" data-font="Symbol" data-leveltext="" data-listid="5" role="listitem">
+<p paraeid="{291c413b-6855-473a-9d71-e6fdcc5aa097}{224}" paraid="1066682179">The Drupal Security Team will no longer provide support or Security Advisories for Drupal 7 core or contributed modules, themes, or other projects&nbsp;</p>
+</li>
+<li aria-setsize="-1" data-aria-level="1" data-aria-posinset="4" data-font="Symbol" data-leveltext="" data-listid="5" role="listitem">
+<p paraeid="{291c413b-6855-473a-9d71-e6fdcc5aa097}{231}" paraid="914268210">Reports about Drupal 7 vulnerabilities might become public, creating 0-day exploits &nbsp;</p>
+</li>
+<li aria-setsize="-1" data-aria-level="1" data-aria-posinset="1" data-font="Symbol" data-leveltext="" data-listid="5" role="listitem">
+<p paraeid="{291c413b-6855-473a-9d71-e6fdcc5aa097}{238}" paraid="852779840">All Drupal 7 releases on all project pages will be flagged as not supported &nbsp;</p>
+</li>
+<li aria-setsize="-1" data-aria-level="1" data-aria-posinset="2" data-font="Symbol" data-leveltext="" data-listid="5" role="listitem">
+<p paraeid="{291c413b-6855-473a-9d71-e6fdcc5aa097}{245}" paraid="418403292">Drupal Core will show up as unsupported &nbsp;</p>
+</li>
+<li aria-setsize="-1" data-aria-level="1" data-aria-posinset="3" data-font="Symbol" data-leveltext="" data-listid="5" role="listitem">
+<p paraeid="{291c413b-6855-473a-9d71-e6fdcc5aa097}{252}" paraid="1456336626">Drupal 7 may be flagged as insecure third-party scans as it no longer gets support &nbsp;</p>
+</li>
+</ul>
+<p paraeid="{291c413b-6855-473a-9d71-e6fdcc5aa097}{252}" paraid="1456336626">While these changes might not be felt right away, it will significantly impact your ability to grow and maintain the site. Ultimately, it will mean your site will fall behind the state of web technology. The good news is that there is a clear path forward.&nbsp;</p>
+<h2 paraeid="{291c413b-6855-473a-9d71-e6fdcc5aa097}{252}" paraid="1456336626">A New Approach with Drupal 9 &amp; 10</h2>
+<p paraeid="{291c413b-6855-473a-9d71-e6fdcc5aa097}{252}" paraid="1456336626">Without hyperbole,&nbsp;the newest versions of&nbsp;Drupal&nbsp;are&nbsp;a game-changer for the open-source community and for Drupal users.&nbsp;</p>
+<p paraeid="{51b25ec5-020e-4294-be39-f24c5bd2ca55}{26}" paraid="753920264">When Drupal 8 was released, it came with significant improvements and enhancements as you would expect with any major CMS release. These improvements include new workflows, a layout builder, workspaces, simplified installations, enhanced security, improved performance, etc. However, beyond these upgrades, there were two even more notable improvements.  &nbsp;</p>
+<ul role="list">
+<li aria-setsize="-1" data-aria-level="1" data-aria-posinset="1" data-font="Symbol" data-leveltext="" data-listid="6" role="listitem">
+<p paraeid="{51b25ec5-020e-4294-be39-f24c5bd2ca55}{48}" paraid="145335630">Major In-Release Enhancements: Drupal 8 included a new release strategy that allows Drupal to introduce major features in the current release and not have to withhold those updates until a major release.   &nbsp;</p>
+</li>
+<li aria-setsize="-1" data-aria-level="1" data-aria-posinset="1" data-font="Symbol" data-leveltext="" data-listid="6" role="listitem">
+<p paraeid="{51b25ec5-020e-4294-be39-f24c5bd2ca55}{55}" paraid="1865901272">Smooth Transitions: With Drupal 8, an in-place upgrade philosophy was adopted to minimize the need for code rebuilds when moving a website to a new Drupal CMS release.&nbsp;&nbsp;</p>
+</li>
+</ul>
+<p paraeid="{51b25ec5-020e-4294-be39-f24c5bd2ca55}{55}" paraid="1865901272">Drupal 8 was retired&nbsp;in November 2021,&nbsp;prior to Drupal 7’s upcoming end of life in January 2023. When planning for your upgrade, a direct update to Drupal 10 is a solution that we&nbsp;recommend&nbsp;to&nbsp;for your cost and time efficiency.&nbsp;</p>
+<h2 paraeid="{51b25ec5-020e-4294-be39-f24c5bd2ca55}{55}" paraid="1865901272">The Waiting Game on Drupal Upgrades&nbsp;</h2>
+<p paraeid="{51b25ec5-020e-4294-be39-f24c5bd2ca55}{110}" paraid="1338106156">With a large variety of Drupal clients, a typical response when a new Drupal version is released is “let’s wait until the next one.” It is a thought that has some merit.&nbsp;</p>
+<p paraeid="{51b25ec5-020e-4294-be39-f24c5bd2ca55}{110}" paraid="1338106156">Historically, when a version of Drupal is released, there is probably a period of time when it makes sense to wait, especially if the site uses a lot of community-based plugins. If this is the case, there may be a brief lag between when the plugin might need to be updated to maximize compatibility with the latest iteration.&nbsp;</p>
+<p>As you can see above, the move off of Drupal 7 has been slow and steady since Drupal 8 was released in 2015.&nbsp;That was a logical approach for many organizations. Depending on where you are in the lifecycle of your website, migrating from Drupal 7 to&nbsp;a newer version&nbsp;may not have made any sense if you knew&nbsp;the platform would be more mature or, more importantly, community-support modules would be ready for&nbsp;the newer iterations of&nbsp;Drupal.&nbsp;</p>
+<h2 paraeid="{51b25ec5-020e-4294-be39-f24c5bd2ca55}{173}" paraid="1901601865">Moving Beyond&nbsp;Drupal 7 Comes  At A&nbsp;Cost  &nbsp;</h2>
+<p paraeid="{51b25ec5-020e-4294-be39-f24c5bd2ca55}{173}" paraid="1901601865">You really&nbsp;cannot&nbsp;blame&nbsp;organizations&nbsp;for waiting&nbsp;on doing&nbsp;an upgrade to a newer&nbsp;version of Drupal. In many cases, it can be a time-consuming and costly endeavor that&nbsp;did not seem necessary at the time.&nbsp;</p>
+<p paraeid="{51b25ec5-020e-4294-be39-f24c5bd2ca55}{173}" paraid="1901601865">If you have a complex website, there are many factors that will need to be considered in the planning of your&nbsp;Drupal upgrade, and is good reason to start&nbsp;now rather than waiting:&nbsp;</p>
+<ul role="list">
+<li aria-setsize="-1" data-aria-level="1" data-aria-posinset="1" data-font="Symbol" data-leveltext="" data-listid="7" role="listitem">
+<p paraeid="{41cc021d-4ebd-48bb-8380-cd75a6ad7cc4}{32}" paraid="133183691">Number of custom modules&nbsp;</p>
+</li>
+<li aria-setsize="-1" data-aria-level="1" data-aria-posinset="2" data-font="Symbol" data-leveltext="" data-listid="7" role="listitem">
+<p paraeid="{41cc021d-4ebd-48bb-8380-cd75a6ad7cc4}{39}" paraid="633302798">Number of integrations&nbsp;</p>
+</li>
+<li aria-setsize="-1" data-aria-level="1" data-aria-posinset="1" data-font="Symbol" data-leveltext="" data-listid="7" role="listitem">
+<p paraeid="{41cc021d-4ebd-48bb-8380-cd75a6ad7cc4}{46}" paraid="1007961466">Need for custom integrations &nbsp;</p>
+</li>
+<li aria-setsize="-1" data-aria-level="1" data-aria-posinset="2" data-font="Symbol" data-leveltext="" data-listid="7" role="listitem">
+<p paraeid="{41cc021d-4ebd-48bb-8380-cd75a6ad7cc4}{53}" paraid="1891248011">Number of existing content types   &nbsp;</p>
+</li>
+<li aria-setsize="-1" data-aria-level="1" data-aria-posinset="3" data-font="Symbol" data-leveltext="" data-listid="7" role="listitem">
+<p paraeid="{41cc021d-4ebd-48bb-8380-cd75a6ad7cc4}{60}" paraid="814477725">Number of content types on new CMS  &nbsp;</p>
+</li>
+<li aria-setsize="-1" data-aria-level="1" data-aria-posinset="4" data-font="Symbol" data-leveltext="" data-listid="7" role="listitem">
+<p paraeid="{41cc021d-4ebd-48bb-8380-cd75a6ad7cc4}{67}" paraid="62971927">Amount of content to be migrated  &nbsp;</p>
+</li>
+<li aria-setsize="-1" data-aria-level="1" data-aria-posinset="5" data-font="Symbol" data-leveltext="" data-listid="7" role="listitem">
+<p paraeid="{41cc021d-4ebd-48bb-8380-cd75a6ad7cc4}{74}" paraid="425825240">Number of customer fields  &nbsp;</p>
+</li>
+<li aria-setsize="-1" data-aria-level="1" data-aria-posinset="1" data-font="Symbol" data-leveltext="" data-listid="7" role="listitem">
+<p paraeid="{41cc021d-4ebd-48bb-8380-cd75a6ad7cc4}{81}" paraid="1332843998">Number of views to be recreated&nbsp;</p>
+</li>
+<li aria-setsize="-1" data-aria-level="1" data-aria-posinset="2" data-font="Symbol" data-leveltext="" data-listid="7" role="listitem">
+<p paraeid="{41cc021d-4ebd-48bb-8380-cd75a6ad7cc4}{88}" paraid="1401895850">Will there be a visual redesign?&nbsp;</p>
+</li>
+</ul>
+<p paraeid="{41cc021d-4ebd-48bb-8380-cd75a6ad7cc4}{99}" paraid="819651934">Of course, there are many other factors, and a true discovery will be necessary to&nbsp;fully&nbsp;understand the scope of the project. Note: That’s also why you should be wary of any proposals that don’t take into account variables that need to be identified during&nbsp;a&nbsp;discovery&nbsp;phase.  &nbsp;</p>
+<p paraeid="{41cc021d-4ebd-48bb-8380-cd75a6ad7cc4}{99}" paraid="819651934">The good news&nbsp;is that once you upgrade from Drupal 7 to a newer version,&nbsp;you will not need&nbsp;to go through that level of effort again, as version&nbsp;updates after Drupal 7 are streamlined and do not require a full rebuild.&nbsp;&nbsp;</p>
+<h2 paraeid="{41cc021d-4ebd-48bb-8380-cd75a6ad7cc4}{157}" paraid="1097759917">The&nbsp;True&nbsp;Cost of Doing Nothing  &nbsp;</h2>
+<p>While there still may be an urge to wait, there is a&nbsp;not-so-hidden cost to doing nothing.&nbsp;</p>
+<p paraeid="{41cc021d-4ebd-48bb-8380-cd75a6ad7cc4}{157}" paraid="1097759917">Many of our clients – and most organizations with high-functioning and highly engaging&nbsp;Drupal&nbsp;websites – are continuously enhancing their websites, including the use of development&nbsp;teams&nbsp;to create new functionality and integrate new solutions&nbsp;that are vetted and kept&nbsp;up-to-date&nbsp;by the supporting Drupal community.&nbsp;</p>
+<p paraeid="{41cc021d-4ebd-48bb-8380-cd75a6ad7cc4}{157}" paraid="1097759917">With the Drupal 7 end of life looming, there are risks of not upgrading to the&nbsp;newest version.&nbsp;</p>
+<ul role="list">
+<li aria-setsize="-1" data-aria-level="1" data-aria-posinset="1" data-font="Symbol" data-leveltext="" data-listid="8" role="listitem">
+<p paraeid="{41cc021d-4ebd-48bb-8380-cd75a6ad7cc4}{229}" paraid="1164777309"><strong>Security:</strong>&nbsp;An out-of-date version of Drupal&nbsp;will need to be frequently monitored and tested to ensure that there are no areas for exploitation.&nbsp;The bigger the website, the bigger the potential impact on budget&nbsp;</p>
+</li>
+<li aria-setsize="-1" data-aria-level="1" data-aria-posinset="2" data-font="Symbol" data-leveltext="" data-listid="8" role="listitem">
+<p paraeid="{41cc021d-4ebd-48bb-8380-cd75a6ad7cc4}{249}" paraid="617262878"><strong>Functionality of 3rd Party APIs:&nbsp;</strong>Any Application Programming Interface (API), a software intermediary that allows two applications to talk to each other, will stop working once out of date. If a site includes a non-functioning&nbsp;shopping cart API&nbsp;or Membership platform API, business&nbsp;can be dramatically impacted.  &nbsp;</p>
+</li>
+<li aria-setsize="-1" data-aria-level="1" data-aria-posinset="1" data-font="Symbol" data-leveltext="" data-listid="8" role="listitem">
+<p paraeid="{7fa77836-389c-4b55-8d0d-4ec719a0b47f}{26}" paraid="337146666"><strong>Ongoing Maintenance and Support:&nbsp;</strong>Over time, it will be more difficult to find developers that are willing and able to maintain an outdated version of Drupal.&nbsp;The most skilled move on from outdated software, which will likely make it more difficult—and definitely more costly—to find developers to work on out-of-date versions. &nbsp;</p>
+</li>
+</ul>
+<p paraeid="{7fa77836-389c-4b55-8d0d-4ec719a0b47f}{26}" paraid="337146666">In other words:&nbsp;<em><strong>It will be way more expensive to maintain your Drupal 7 website than it will be to upgrade to the latest version.&nbsp;</strong></em></p>
+<h2 paraeid="{7fa77836-389c-4b55-8d0d-4ec719a0b47f}{26}" paraid="337146666">It’s Time to Make Your Move&nbsp;</h2>
+<p paraeid="{7fa77836-389c-4b55-8d0d-4ec719a0b47f}{26}" paraid="337146666">As the clock ticks toward&nbsp;January 2025 and the end of life for Drupal 7 websites, now is the time to&nbsp;prepare for the future.&nbsp;A&nbsp;Drupal upgrade will benefit your budget and business KPIs.&nbsp;Not sure where to start with your&nbsp;website's Drupal migration? Get in&nbsp;touch&nbsp;the experts at Unleashed&nbsp;and&nbsp;get started today!&nbsp;&nbsp;</p>
+
+      </div>
+
+  </div>
+  </article>
+
+  </div>
+
+      </div>
+</div>
+                </div>
+                <div class="col-xs-12 col-md-3 pull-right">
+                  <div class="sidebar bottom">  <div id="region-sidebar-bottom">
+        <div  id="block-sidebar-insight" class="block">
+  
+  
+                <h4><strong>Related Services</strong></h4>
+      <div class="field field--name-field-related-services field--type-entity-reference field--label-hidden">
+            <div><a href="../services/technology-website-development.html" hreflang="en">Technology &amp; Website Development</a></div>
+          <div><a href="../services/strategy-optimization.html" hreflang="en">Strategy &amp; Website Optimization</a></div>
+          <div><a href="../services/devops-hosting.html" hreflang="en">DevOps &amp; Web Hosting</a></div>
+      </div>
+
+      </div>
+<div id="block-newslettersignup" class="block">
+  
+    
+      <div class="field field--name-field-component field--type-entity-reference-revisions field--label-hidden">
+              <div class="paragraph paragraph--type--section paragraph--view-mode--default">
+        
+      <section class="section ">
+    <div class="container">    
+                
+
+   <div class="paragraph paragraph--type--layout paragraph--view-mode--default">
+                
+          <div class="base__layout ">
+    <div class="container">
+      <div class="item-grid">
+        <div class="body-text">
+                  </div>
+        <div class="clearfix grid  one">
+
+ 
+    <div class="base__text-card primary has-bg">
+    <div class="inner">
+                    <h3>
+                <div class="field field--name-field-title field--type-string field--label-hidden">
+            Got FOMO?
+      </div>
+
+            </h3>
+               <div class="blurb">
+           <div class="clearfix text-formatted field field--name-field-rich-text field--type-text-long field--label-hidden">
+            <p>Join our newsletter and you'll never miss out!</p>
+<p><a class="btn secondary" href="../newsletter-signup.html">Sign up today</a></p>
+
+      </div>
+
+       </div>
+   </div>
+</div>
+</div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+      </div>
+  </section>
+  </div>
+
+      </div>
+
+  </div>
+
+      </div>
+</div>
+                </div>
+                          </div>
+          </div>
+        </section>
+                </section>
+        <section class="feature" role="complementary" aria-label="Featured Bottom Content">
+      <div class="container-fluid">
+        <div class="row">  <div id="region-feature">
+        <div  class="views-element-container section has-bg white" id="block-views-block-homepage-insights-related-insights">
+  
+      <h2 class="heading">Related Insights</h2>
+    
+      <div class="container"><div>
+<div  class="insights related view view-homepage-insights view-id-homepage_insights view-display-id-related_insights js-view-dom-id-c177a0a17e8e5c01985309e408b1d10b897a6f9c866390bc442a61ff28f7bc94">
+  
+  
+  
+
+    
+  
+
+      <div class="view-content">    <article class="insight teaser">
+  <div class="img"><a href="../blog/healthcare-web-development-best-practices-build-credibility-online.html"><div class="field field--name-field-teaser-image field--type-entity-reference field--label-hidden">
+              <img loading="lazy" src="../sites/default/files/styles/800x600/public/2025-04/Picture11.jpg%3Fh=11ee7a56&amp;itok=LnpAJxPI" width="800" height="600" alt="Building Credibility Online: Web Development Best Practices for Diseased-Focused Associations" class="image-style-_00x600" />
+
+
+
+      </div>
+</a></div>
+  <div class="blurb">
+    <div class="inner">
+      <div class="type"><div class="field field--name-field-insight-type field--type-entity-reference field--label-hidden">
+            Blog
+      </div>
+</div>
+      <h3><a href="../blog/healthcare-web-development-best-practices-build-credibility-online.html"><span class="field field--name-title field--type-string field--label-hidden">Healthcare Web Development Best Practices To Build Credibility Online</span>
+</a></h3>
+      <p>Healthcare websites require strategic approach. Learn actionable tips to develop sites for disease-focused associations.</p>
+      <a href="../blog/healthcare-web-development-best-practices-build-credibility-online.html" class="arrow-link primary" aria-label="Continue reading the article titled Healthcare Web Development Best Practices To Build Credibility Online">Read More</a>
+    </div>
+  </div>
+</article>
+
+    <article class="insight teaser">
+  <div class="img"><a href="../blog/transforming-associations-generative-ai-and-specialized-digital-solutions.html"><div class="field field--name-field-teaser-image field--type-entity-reference field--label-hidden">
+              <img loading="lazy" src="../sites/default/files/styles/800x600/public/2025-04/Gen%20AI%20Associations.jpg%3Fh=3113d5a0&amp;itok=fbnps93c" width="800" height="600" alt="Improve member engagement, maximize cost savings, and address security concerns. We uncover the power of generative AI and digital solutions for associations." class="image-style-_00x600" />
+
+
+
+      </div>
+</a></div>
+  <div class="blurb">
+    <div class="inner">
+      <div class="type"><div class="field field--name-field-insight-type field--type-entity-reference field--label-hidden">
+            Blog
+      </div>
+</div>
+      <h3><a href="../blog/transforming-associations-generative-ai-and-specialized-digital-solutions.html"><span class="field field--name-title field--type-string field--label-hidden">Transforming Associations with Generative AI and Specialized Digital Solutions</span>
+</a></h3>
+      <p>Boost engagement, cut costs, and enhance security with Generative AI and digital tools for Associations.</p>
+      <a href="../blog/transforming-associations-generative-ai-and-specialized-digital-solutions.html" class="arrow-link primary" aria-label="Continue reading the article titled Transforming Associations with Generative AI and Specialized Digital Solutions">Read More</a>
+    </div>
+  </div>
+</article>
+
+    <article class="insight teaser">
+  <div class="img"><a href="../blog/modern-eCommerce-tools.html"><div class="field field--name-field-teaser-image field--type-entity-reference field--label-hidden">
+              <img loading="lazy" src="../sites/default/files/styles/800x600/public/2023-12/ECommerce%20Podcast%20Blog%20Image.png%3Fh=887ca5a5&amp;itok=U0vHeDgo" width="800" height="600" alt="Shopware Podcast Preview Image" class="image-style-_00x600" />
+
+
+
+      </div>
+</a></div>
+  <div class="blurb">
+    <div class="inner">
+      <div class="type"><div class="field field--name-field-insight-type field--type-entity-reference field--label-hidden">
+            Blog
+      </div>
+</div>
+      <h3><a href="../blog/modern-eCommerce-tools.html"><span class="field field--name-title field--type-string field--label-hidden">Modern eCommerce Tools</span>
+</a></h3>
+      <p>Learn how Unleashed and Shopware are shaping the future of digital commerce with cutting edge technology.</p>
+      <a href="../blog/modern-eCommerce-tools.html" class="arrow-link primary" aria-label="Continue reading the article titled Modern eCommerce Tools">Read More</a>
+    </div>
+  </div>
+</article>
+
+</div>
+    
+  
+
+  
+
+  
+
+      <footer><p align="center"><a href="../insights.html" class="btn primary">All Insights</a></p></footer>
+  
+  
+</div>
+</div>
+</div>
+  </div>
+
+      </div>
+</div>
+      </div>
+    </section>
+      <footer>
+  <section class="footer" aria-label="Footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12  col-sm-6 col-lg-3">
+          <div class="logo-footer visible-xs">
+            <a href="../index.html"><img src="../themes/custom/base/assets/img/logo-reverse.svg" /></a>
+          </div>
+          <div class="footer-tag">Let's Get Started!</div>
+          <a href="../contact-us.html" class="btn">Contact Us</a>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-lg-4 col-lg-push-5">
+          <div class="logo-footer hidden-xs">
+            <a href="../index.html"><img src="../themes/custom/base/assets/img/logo-reverse.svg" /></a>
+          </div>
+          <div class="newsletter-block">
+            <h4>Sign up for our newsletter</h4>
+              <div id="region-footer">
+        <div id="block-webform" class="newsletter block">
+  
+    
+      <form class="webform-submission-form webform-submission-add-form webform-submission-newsletter-form webform-submission-newsletter-add-form webform-submission-newsletter-node-187-form webform-submission-newsletter-node-187-add-form js-webform-details-toggle webform-details-toggle" data-drupal-selector="webform-submission-newsletter-node-187-add-form" action="risks-drupal-7.html" method="post" id="webform-submission-newsletter-node-187-add-form" accept-charset="UTF-8">
+  
+      <div class="form-type-email col-xs-12 js-form-item form-item js-form-type-email form-item-email js-form-item-email form-no-label">
+      <label for="edit-email" class="form-item__label visually-hidden js-form-required form-required">Email</label>
+        <input data-drupal-selector="edit-email" type="email" id="edit-email" name="email" value="" size="60" maxlength="254" placeholder="Enter your email" class="form-email required form-element form-element--type-email form-element--api-email" required="required" aria-required="true"/>
+        </div>
+<div data-drupal-selector="edit-actions" class="form-actions webform-actions js-form-wrapper form-wrapper" id="edit-actions"><div class="row">
+	<div class="col-xs-12">
+		  <button class="webform-button--submit btn-icon icon-chevron button--primary js-form-submit form-submit btn" data-drupal-selector="edit-actions-submit" type="submit" id="edit-actions-submit" name="op" value="Submit">Submit</button>
+
+	</div>
+</div></div>
+<input autocomplete="off" data-drupal-selector="form-ye-exkz-nh-jobyf01rf8xrwbmpdxpi43mdgu40fm3e" type="hidden" name="form_build_id" value="form-Ye_exkz_Nh-joByf01Rf8XrWBMPdxPi43mdGu40FM3E"/><input data-drupal-selector="edit-webform-submission-newsletter-node-187-add-form" type="hidden" name="form_id" value="webform_submission_newsletter_node_187_add_form"/><input data-drupal-selector="edit-honeypot-time" type="hidden" name="honeypot_time" value="hgqYFqZ5p0zLx8uzIymKMVEIIJ_vnTrtZnwmvpC84qI"/><div class="url-textfield js-form-wrapper form-wrapper" style="display: none !important;">    <div class="col-xs-12 js-form-item form-item js-form-type-textfield form-item-url js-form-item-url">
+      <label for="edit-url" class="form-item__label">Leave this field blank</label>
+        <input autocomplete="off" data-drupal-selector="edit-url" type="text" id="edit-url" name="url" value="" size="20" maxlength="128" class="form-text form-element form-element--type-text form-element--api-textfield"/>
+        </div>
+</div>
+
+
+  
+</form>
+
+  </div>
+
+      </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="copyright" aria-label="Copyright">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-7 pull-right">
+          <div class="links">
+            <ul class="inline">
+              <li>
+                <a href="../about.html">About Us</a>
+              </li>
+              <li>
+                <a href="../contact-us.html">Contact Us</a>
+              </li>
+              <li>
+                <a href="../careers.html">Careers</a>
+              </li>
+            </ul>
+            <ul class="social">
+              <li>
+                <a href="https://www.linkedin.com/company/unleasheddigital/mycompany/"><i class="icon-linkedin"></i></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/unleashtech?lang=en"><i class="icon-twitter"></i></a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/UnleashedTechnologies/"><i class="icon-facebook"></i></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/unleashed_tech/?hl=en"><i class="icon-instagram"></i></a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/channel/UCyRKDUl6XdtxtBcs7-TyylQ"><i class="icon-youtube"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-5">
+          <p>
+            © 2025 Unleashed Technologies. All Rights Reserved. <span class="hidden-xs">|</span> <a href="../privacy-policy.html">Privacy Policy</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</footer>
+</div>
+
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"","currentPath":"node\/187","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxPageState":{"libraries":"eJyFUO1OxDAMe6Gue6QpbXNdIG2qJrsPnp5xDA6Yjv2JLNuxLAdQHKOUJhWr6QNOgSW-uvBHn6Vgg4wTVaU8mw4dGQzTN7F70Zsalil0qIlqfhK8uQpQPXBgXY4cqmtFfeK6YDhJLz_VzBKAP7Hh1YYIPamLDF02cVC78VrfRek41jUAmN7QFUwE44nYsPsIzUiqa9Ahd2izjqkvDdg_GL_UtgQmnTG5M-FFx_v18ALXX0SRtDC6re9Xb4-M6wbmExoQq1c4H5tMcv4na5tsp3-cHWnz-uTv47wDv0LhBQ","theme":"base","theme_token":null},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true},"views":{"ajax_path":"\/views\/ajax","ajaxViews":{"views_dom_id:c177a0a17e8e5c01985309e408b1d10b897a6f9c866390bc442a61ff28f7bc94":{"view_name":"homepage_insights","view_display_id":"related_insights","view_args":"187\/187","view_path":"\/node\/187","view_base_path":"admin\/content\/insights","view_dom_id":"c177a0a17e8e5c01985309e408b1d10b897a6f9c866390bc442a61ff28f7bc94","pager_element":0}}},"user":{"uid":0,"permissionsHash":"b4092bf008ff30cc2c566537818c31d6d5792dacbeb6fbb09d313f65c3f21367"}}</script>
+<script src="../core/assets/vendor/jquery/jquery.min.js?v=3.7.1" type="b53a3f1400a12af4ecdd3047-text/javascript"></script>
+<script src="../core/assets/vendor/once/once.min.js?v=1.0.1" type="b53a3f1400a12af4ecdd3047-text/javascript"></script>
+<script src="../core/misc/drupalSettingsLoader.js?v=10.4.4" type="b53a3f1400a12af4ecdd3047-text/javascript"></script>
+<script src="../core/misc/drupal.js?v=10.4.4" type="b53a3f1400a12af4ecdd3047-text/javascript"></script>
+<script src="../core/misc/drupal.init.js?v=10.4.4" type="b53a3f1400a12af4ecdd3047-text/javascript"></script>
+<script src="../core/assets/vendor/tabbable/index.umd.min.js?v=6.2.0" type="b53a3f1400a12af4ecdd3047-text/javascript"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="b53a3f1400a12af4ecdd3047-text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js" type="b53a3f1400a12af4ecdd3047-text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js" type="b53a3f1400a12af4ecdd3047-text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/enquire.js/2.1.2/enquire.min.js" type="b53a3f1400a12af4ecdd3047-text/javascript"></script>
+<script src="../themes/custom/base/assets/js/script.js%3Fv=10.4.4" type="b53a3f1400a12af4ecdd3047-text/javascript"></script>
+<script src="../core/misc/jquery.form.js?v=4.3.0" type="b53a3f1400a12af4ecdd3047-text/javascript"></script>
+<script src="../core/misc/progress.js?v=10.4.4" type="b53a3f1400a12af4ecdd3047-text/javascript"></script>
+<script src="../core/assets/vendor/loadjs/loadjs.min.js?v=4.3.0" type="b53a3f1400a12af4ecdd3047-text/javascript"></script>
+<script src="../core/misc/debounce.js?v=10.4.4" type="b53a3f1400a12af4ecdd3047-text/javascript"></script>
+<script src="../core/misc/announce.js?v=10.4.4" type="b53a3f1400a12af4ecdd3047-text/javascript"></script>
+<script src="../core/misc/message.js?v=10.4.4" type="b53a3f1400a12af4ecdd3047-text/javascript"></script>
+<script src="../core/themes/claro/js/messages.js?svl0gm" type="b53a3f1400a12af4ecdd3047-text/javascript"></script>
+<script src="../core/misc/ajax.js?v=10.4.4" type="b53a3f1400a12af4ecdd3047-text/javascript"></script>
+<script src="../core/themes/claro/js/ajax.js?svl0gm" type="b53a3f1400a12af4ecdd3047-text/javascript"></script>
+<script src="../core/modules/views/js/base.js?v=10.4.4" type="b53a3f1400a12af4ecdd3047-text/javascript"></script>
+<script src="../core/modules/views/js/ajax_view.js?v=10.4.4" type="b53a3f1400a12af4ecdd3047-text/javascript"></script>
+<script src="../modules/contrib/webform/js/webform.element.details.save.js%3Fv=10.4.4" type="b53a3f1400a12af4ecdd3047-text/javascript"></script>
+<script src="../modules/contrib/webform/js/webform.element.details.toggle.js%3Fv=10.4.4" type="b53a3f1400a12af4ecdd3047-text/javascript"></script>
+<script src="../modules/contrib/webform/js/webform.element.message.js%3Fv=10.4.4" type="b53a3f1400a12af4ecdd3047-text/javascript"></script>
+<script src="../core/misc/form.js?v=10.4.4" type="b53a3f1400a12af4ecdd3047-text/javascript"></script>
+<script src="../modules/contrib/webform/js/webform.behaviors.js%3Fv=10.4.4" type="b53a3f1400a12af4ecdd3047-text/javascript"></script>
+<script src="../core/misc/states.js?v=10.4.4" type="b53a3f1400a12af4ecdd3047-text/javascript"></script>
+<script src="../modules/contrib/webform/js/webform.states.js%3Fv=10.4.4" type="b53a3f1400a12af4ecdd3047-text/javascript"></script>
+<script src="../modules/contrib/webform/js/webform.form.js%3Fv=10.4.4" type="b53a3f1400a12af4ecdd3047-text/javascript"></script>
+
+  <script src="../cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="b53a3f1400a12af4ecdd3047-|49" defer></script></body>
+</html>

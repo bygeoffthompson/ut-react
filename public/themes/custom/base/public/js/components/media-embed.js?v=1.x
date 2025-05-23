@@ -1,0 +1,2 @@
+!function(e,i,s){"use strict";e.behaviors.mediaEmbed={attach:function(e,i){var s=jQuery.noConflict();s(".base__media-embed .slider").each((function(){let e=s(this);void 0!==e.slick&&e.slick({slidesToShow:1,slidesToScroll:1,prevArrow:e.parents(".base__media-embed").find(".prev-slide"),nextArrow:e.parents(".base__media-embed").find(".next-slide"),responsive:[{breakpoint:768,settings:{adaptiveHeight:!0}}]})}))}}}(Drupal,jQuery);
+//# sourceMappingURL=media-embed.js.map

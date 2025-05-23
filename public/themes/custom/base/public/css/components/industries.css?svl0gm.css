@@ -1,0 +1,2 @@
+.industry{margin:50px 0}.industry .inner{display:grid;gap:50px;grid:auto/1fr 1fr}@media (max-width:991px){.industry .inner{grid:auto/1fr}}.industry .blurb{align-self:center;position:relative;z-index:1}.industry .blurb h2,.industry .blurb h3,.industry .blurb h4{color:#003b87}.industry .blurb .icon{margin:0 auto;position:relative}.industry .blurb .icon svg{height:140px}.industry .blurb .icon img{width:100%}.industry .img{overflow:hidden}.industry .img img{aspect-ratio:4/3;object-fit:cover;width:100%}
+/*# sourceMappingURL=industries.css.map */
