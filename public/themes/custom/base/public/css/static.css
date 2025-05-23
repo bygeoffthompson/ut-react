@@ -9621,3 +9621,33 @@ body > img {
 #webpack-dev-server-client-overlay {
     display: none !important;
 }
+#block-our-content h2 {
+    margin: 0;
+}
+#block-our-content .body-text {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+    margin: 30px auto;
+}
+#block-our-content input[placeholder] {
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    font-size: 40px;
+    max-width: 100%;
+    outline: none !important;
+    text-align: center;
+}
+@media (min-width: 768px) {
+    #block-our-content .body-text {
+        flex-direction: row;
+    }
+
+    #block-our-content input[placeholder] {
+        max-width: 400px;
+        text-align: left;
+    }
+}

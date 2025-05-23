@@ -6,10 +6,14 @@ function App() {
   const [searchResults, setSearchResults] = useState([]);
 
   useEffect(() => {
-    const results = data.filter(item =>
-        item.title.toLowerCase().includes(searchTerm.toLowerCase())
-    );
-    setSearchResults(results);
+      if (searchTerm) {
+          const results = data.filter(item =>
+              item.title.toLowerCase().includes(searchTerm.toLowerCase())
+          );
+          setSearchResults(results);
+      } else {
+          setSearchResults([]);
+      }
   }, [searchTerm]);
 
   const handleChange = (event) => {
@@ -18,17 +22,20 @@ function App() {
 
   return (
       <div>
-        <input
-            type="text"
-            placeholder="Search by name..."
-            value={searchTerm}
-            onChange={handleChange}
-        />
-        <ul>
-          {searchResults.map(item => (
-              <li key={item.id}><a href={item.href}>{item.title}</a></li>
-          ))}
-        </ul>
+          <div className="body-text">
+              <h2 className="heading">Search</h2>
+              <input
+                  type="text"
+                  placeholder="Our Content"
+                  value={searchTerm}
+                  onChange={handleChange}
+              />
+          </div>
+          <ul>
+              {searchResults.map(item => (
+                  <li key={item.id}><a href={item.href}>{item.title}</a></li>
+              ))}
+          </ul>
       </div>
   );
 }

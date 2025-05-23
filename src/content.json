@@ -1,8 +1,8 @@
 [
   {
     "id": 1,
-    "title": "Homepage",
-    "href": "/"
+    "title": "About",
+    "href": "/about.html"
   },
   {
     "id": 2,
@@ -11,7 +11,37 @@
   },
   {
     "id": 3,
+    "title": "Careers",
+    "href": "/careers.html"
+  },
+  {
+    "id": 4,
+    "title": "Contact Us",
+    "href": "/contact-us.html"
+  },
+  {
+    "id": 5,
+    "title": "Industries",
+    "href": "/industries.html"
+  },
+  {
+    "id": 6,
     "title": "Insights",
     "href": "/insights.html"
+  },
+  {
+    "id": 7,
+    "title": "Services",
+    "href": "/services.html"
+  },
+  {
+    "id": 8,
+    "title": "Start a Project",
+    "href": "/start-project.html"
+  },
+  {
+    "id": 9,
+    "title": "Work",
+    "href": "/work.html"
   }
 ]
