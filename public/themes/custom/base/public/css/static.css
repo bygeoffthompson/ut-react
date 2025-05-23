@@ -9618,9 +9618,6 @@ body > img {
 .byline {
     font-size: 20px;
 }
-#webpack-dev-server-client-overlay {
-    display: none !important;
-}
 #block-our-content h2 {
     margin: 0;
 }

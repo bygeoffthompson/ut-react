@@ -61,7 +61,7 @@ window.Drupal = { behaviors: {}, locale: {} };
    */
   Drupal.throwError = function (error) {
     setTimeout(() => {
-      throw error;
+      //throw error;
     }, 0);
   };
 
