@@ -33,7 +33,9 @@ function App() {
           </div>
           <ul>
               {searchResults.map(item => (
-                  <li key={item.id}><a href={item.href}>{item.title}</a></li>
+                  <li key={item.id}>
+                      <a href={item.href}>{item.title}</a>
+                  </li>
               ))}
           </ul>
       </div>

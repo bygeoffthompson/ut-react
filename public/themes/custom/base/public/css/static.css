@@ -9645,7 +9645,9 @@ body > img {
     #block-our-content .body-text {
         flex-direction: row;
     }
-
+    #block-our-content h2 {
+        margin: -4px 0 0;
+    }
     #block-our-content input[placeholder] {
         max-width: 400px;
         text-align: left;
