@@ -9594,6 +9594,19 @@ body > img {
     scale: 4;
     width: 100%;
 }
+#block-homepageherovideo svg {
+    height: auto;
+    width: 24px;
+}
+#block-homepageherovideo .icons {
+    list-style-type: none;
+    padding: 0;
+}
+#block-homepageherovideo .icons li {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
 #block-homepageherovideo .text {
     color: #fff;
     margin-top: -400px;
