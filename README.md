@@ -1,4 +1,4 @@
-# Unleashed Technologies Static Site with React Search 
+# Unleashed Technologies HTML Website with React Search 
 
 This project was bootstrapped with `create-react-app`.
 
