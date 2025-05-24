@@ -9652,18 +9652,34 @@ body > img {
     justify-content: start;
     margin-bottom: .5rem;
 }
+.search-result:first-of-type {
+    font-size: 28px;
+}
+.search-result:first-of-type span {
+    font-size: 18px;
+    opacity: 1;
+}
 .search-result a {
     transition: all .25s ease-in;
 }
 .search-result:hover > a {
     font-size: 28px;
 }
+#search-container:hover .search-result:first-of-type {
+    font-size: 18px;
+}
+#search-container:hover .search-result:first-of-type span {
+    opacity: .34;
+}
+#search-container:hover .search-result:first-of-type:hover span {
+    opacity: 1;
+}
 .search-result:hover .search-text {
     opacity: 1;
 }
 .search-text {
     font-style: italic;
-    opacity: .25;
+    opacity: .34;
 }
 #block-our-content h2 {
     margin: 0;

@@ -33,7 +33,7 @@ function App() {
                   onChange={handleChange}
               />
           </div>
-          <div>
+          <div id="search-container">
               {searchResults.map(item => (
                   <div className="search-result" key={item.id}>
                       <a href={item.href}>{item.title}</a>
