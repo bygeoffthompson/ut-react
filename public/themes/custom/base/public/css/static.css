@@ -9647,10 +9647,15 @@ body > img {
 .search-result {
     align-items: center;
     display: flex;
+    flex-direction: column;
     font-size: 18px;
-    gap: 1rem;
+    gap: 0;
     justify-content: start;
-    margin-bottom: .5rem;
+    margin-bottom: 2rem;
+}
+.search-result a,
+.search-result span {
+    display: block;
 }
 .search-result:first-of-type {
     font-size: 28px;
