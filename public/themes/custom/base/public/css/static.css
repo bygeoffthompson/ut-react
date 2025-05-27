@@ -9651,9 +9651,7 @@ body > img {
 .heartbeat {
     background: #003b87;
     height: 4px;
-    left: 0;
-    position: absolute;
-    top: 32px;
+    position: relative;
     width: 100%;
     z-index: 1;
 }
@@ -9670,9 +9668,6 @@ body > img {
     display: none;
 }
 @media(min-width: 768px) {
-    .heartbeat {
-        top: 48px;
-    }
     .heartbeat .tablet {
         display: block;
     }
