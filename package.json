@@ -1,7 +1,7 @@
 {
   "name": "ut-react",
   "version": "0.1.0",
-  "homepage": "https://bygeoffthompson.github.io/ut",
+  "homepage": "https://bygeoffthompson.github.io",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
