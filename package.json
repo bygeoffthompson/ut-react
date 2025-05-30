@@ -1,7 +1,7 @@
 {
   "name": "ut-react",
   "version": "1.0.0",
-  "homepage": "https://interpathway.github.io/ut-react",
+  "homepage": "https://bygeoffthompson.github.io/ut-react",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
