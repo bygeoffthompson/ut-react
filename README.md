@@ -60,6 +60,11 @@ Build the app for production to the `build` folder.
 npm run build
 ```
 
+Deploy the app for production via Github Pages.
+```
+npm run deploy
+```
+
 ## React Search
 
 This static site's search is handled by React which queries a JSON file (`/src/content.json`) containing the search index.
